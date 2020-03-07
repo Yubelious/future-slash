@@ -1,0 +1,211 @@
+@-moz-document domain("duelingnexus.com") {
+body {
+    font-size: 2.5vh;
+    margin: 0;
+    height: 100vh;
+    position: relative;
+}
+#app {
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 25%;
+}
+#home-area {
+    display: none
+}
+#login-area[data-v-9bfe76b0], #register-area[data-v-4068c77b], #recover-area[data-v-8098b0b4], #navbar {
+    max-height: 100vw;
+    width: 25%;
+    position: fixed;
+    margin: 0;
+    left: 0;
+}
+#navbar {
+    background-image: linear-gradient(-20deg, #121724, #010711);
+    border-width: 0 .2vw 0 0;
+    border-style: solid;
+    border-color: #7a7a7a;
+    height: 100%;
+    padding-top: 2%;
+}
+#navbar-left button img {
+    height: 2vw;
+    width: 2vw;
+    padding: .5vw;
+}
+#navbar-left {
+    height: 100%;
+    width: 25%;
+    margin-left: 5%;
+    position: fixed;
+    top: 80%;
+    left: 0;
+}
+#navbar-left button {
+    float: left;
+    padding: .5vh;
+    min-height: 0;
+    min-width: 0;
+    margin: 0 1.5vw 0 0;
+}
+#navbar-left br, #navbar-middle br {
+    display: none
+}
+#navbar-left:before {
+    content: 'JOIN US ON!';
+    text-align: left;
+    display: block;
+    padding-bottom: 5%;
+}
+#chat-button {
+    font-size: 0
+}
+#navbar-middle {
+    margin: 0
+}
+#navbar-middle:before{
+    content: url("https://i.imgur.com/s5Fi8nR.png")
+}
+#navbar-middle button, #navbar-right button {
+    font-family: 'Lato';
+    font-size: 1.5vw;
+    text-align: left;
+    vertical-align: middle;
+    min-height: 0;
+    border: none;
+}
+#navbar-middle button {
+    text-transform: uppercase;
+    margin: 5% 0 0 0;
+    padding: 3% 3% 3% 6%;
+}
+#navbar-middle button, form button, form input[type="text"], form input[type="password"], form input[type="email"] {
+    width: 80%
+}
+#navbar-middle button img, #navbar-right button img {
+    float: right;
+    height: 2vw;
+    width: 2vw;
+}
+#navbar #logout-button {
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0);
+    position: fixed;
+    top: 0;
+    right: 0;
+    border-width: 0;
+}
+#navbar #logout-button img {
+    padding: 0 .75vw;
+}
+#navbar button, form button, input[type="text"], form input[type="password"], a, input, label {
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+    -webkit-transition-property: all;
+    -moz-transition-property: all;
+    -o-transition-property: all;
+    transition-property: all;
+}
+#navbar button:not(#logout-button), form button, input[type="text"], form input[type="password"], form input[type="email"] {
+    border-width: 0;
+    color: white;
+    background-color: #252C37;
+}
+form button, input[type="text"], form input[type="password"], form input[type="email"] {
+    text-indent: 0.5vw
+}
+a:focus, a:hover, input:focus, input:hover, label:focus, label:hover, form button:focus, form button:hover {
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+    -webkit-transition-property: all;
+    -moz-transition-property: all;
+    -o-transition-property: all;
+    transition-property: all;
+}
+#navbar button:hover, form button:hover, input:hover, form input[type="password"]:hover, form input[type="email"]:hover {
+    background-color: #4f1158 !important
+}
+#socket-connection {/*This keeps the socket on the top left*/
+    line-height: 1.5;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    height: 3vh;
+    z-index: 3;
+    position: fixed;
+    top: 0;
+    left: 26%;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 100;
+  src: local('Lato Hairline'), local('Lato-Hairline'), url(https://fonts.gstatic.com/s/lato/v16/S6u8w4BMUTPHh30AUi-qJCY.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 100;
+  src: local('Lato Hairline'), local('Lato-Hairline'), url(https://fonts.gstatic.com/s/lato/v16/S6u8w4BMUTPHh30AXC-q.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Lato Light'), local('Lato-Light'), url(https://fonts.gstatic.com/s/lato/v16/S6u9w4BMUTPHh7USSwaPGR_p.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Lato Light'), local('Lato-Light'), url(https://fonts.gstatic.com/s/lato/v16/S6u9w4BMUTPHh7USSwiPGQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+}
+
+@-moz-document url-prefix("https://duelingnexus.com/login"), url-prefix("https://duelingnexus.com/register"), url-prefix("https://duelingnexus.com/recover") {
+h2 {
+    opacity: 0;
+}
+#login-area[data-v-9bfe76b0], #register-area[data-v-4068c77b], #recover-area[data-v-8098b0b4] {
+    background-color: rgba(0, 0, 0, 0);
+    border-width: 0;
+    top: 0;
+}
+#navbar-middle button {
+    display: none
+}
+#login-area h2, #register-area h2, #recover-area h2 {
+    font-size: 3vh;
+    margin: 2vh 0 3vh 0;
+}
+input[type="email"], form input[type="email"], form input[type="password"], form input[type="text"], form button {
+    height: 2.75vw;
+    padding: 0 .5vw;
+}
+a, input, label {
+    opacity: .7;
+    cursor: pointer;
+}
+a:hover, input:hover, label:hover {
+    opacity: 1
+}
+#links-area[data-v-9bfe76b0], #links-area[data-v-4068c77b], #links-area[data-v-8098b0b4] {
+    border-top: 0;
+    margin: 0;
+    padding: 0;
+}
+}
