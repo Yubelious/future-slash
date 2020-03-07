@@ -33,7 +33,7 @@ body {
     top: 0;
     left: 26%;
 }
-#news-area, #duel-area, #custom-game-area[data-v-5b840ce8], #my-profile[data-v-7d3c70a7], #leaderboard-page {
+#news-area, #duel-area, #custom-game-area[data-v-5b840ce8], #my-profile[data-v-7d3c70a7], #leaderboard-page, #donate-area[data-v-6d0fcd6e] {
     box-sizing: border-box;
     display: block;
     overflow-y: auto;
@@ -51,7 +51,7 @@ body {
     height: 65%;
     top: 25%;
 }
-#custom-game-area[data-v-5b840ce8], #my-profile[data-v-7d3c70a7], #leaderboard-page {
+#custom-game-area[data-v-5b840ce8], #my-profile[data-v-7d3c70a7], #leaderboard-page, #donate-area[data-v-6d0fcd6e] {
     height: 75%;
     top: 15%;
 }
