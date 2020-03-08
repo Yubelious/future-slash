@@ -175,15 +175,19 @@ h3 {
     text-transform: uppercase;
     color: #F33;
 }
-#duel-area > div > p > button {
-    width: 100%;
-    border: none;
-    background-color: #252C37;
-    text-transform: uppercase;
+#duel-area > div > p > button, #duel-area > div > p:nth-of-type(6), #region-select, option {
     font-size: 1.5vw;
-    text-align: left;
     height: 10vh;
     padding: 3% 3% 3% 6%;
+}
+#duel-area > div > p > button, select {
+    text-align: left;
+    background-color: #252C37;
+    border: none;
+    width: 100%;
+}
+#duel-area > div > p > button:hover {
+    background-color: #4f1158
 }
 #duel-area > div {
     display: grid;
@@ -191,12 +195,14 @@ h3 {
     grid-gap: 0;
 }
 #duel-area button img {
+    padding: 5% 1%;
     float: right;
     height: 2vw;
     width: 2vw;
 }
 select {
-    padding: 0
+    height: 50%;
+    padding: 0;
 }
 }
 
