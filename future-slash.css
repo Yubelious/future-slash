@@ -88,11 +88,48 @@ article, #navbar {
 #news-area {
     display: none
 }
+#socket-connection, #navbar-right, #news-area {
+    opacity: 0
+}
+#login-loading {
+    font-size: 4vh;
+    margin: 0;
+}
 }
 
 @-moz-document url("https://duelingnexus.com/home") {
+@keyframes disappear {
+    0% {opacity: 1}
+    25% {opacity: 1}
+    100% {opacity: 0}
+}
+@keyframes appear {
+    0% {opacity: 0}
+    50% {opacity: 0}
+    100% {opacity: 1}
+}
 #home-area {
-    opacity: 0
+    background-color: rgba(0, 0, 0, 0);
+    border-width: 0;
+}
+#home-area p:nth-child(2) {
+    animation: disappear 3s;
+    font-size: 5vh;
+    background: rgba(0, 0, 0, .5);
+    height: 100%;
+    width: 100%;
+    padding-top: 40vh;
+    opacity: 0;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#home-area h2, #home-area button {
+    display: none
+}
+#navbar-middle, #navbar-right, #news-area, #socket-connection {
+    animation: appear 3s
 }
 #navbar-middle > button:nth-of-type(1) {
     background-color: #4f1158 !important
