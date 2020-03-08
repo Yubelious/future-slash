@@ -157,16 +157,16 @@ h3 {
     position: absolute;
 }
 #duel-area p {
-    margin: 25% 0 0 0
+    margin: 7vh 2% 0 0
 }
 #duel-area > div > h3:nth-of-type(1) {
-    top: 5%
+    top: 4vh
 }
 #duel-area > div > h3:nth-of-type(2) {
-    top: 35%
+    top: 21vh
 }
 #duel-area > div > h3:nth-of-type(3) {
-    top: 62%
+    top: 38vh
 }
 #duel-area > div > h3:nth-of-type(4) {
     opacity: 0
@@ -182,16 +182,21 @@ h3 {
     text-transform: uppercase;
     font-size: 1.5vw;
     text-align: left;
+    height: 10vh;
+    padding: 3% 3% 3% 6%;
 }
 #duel-area > div {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 3%;
+    grid-gap: 0;
 }
 #duel-area button img {
     float: right;
     height: 2vw;
     width: 2vw;
+}
+select {
+    padding: 0
 }
 }
 
