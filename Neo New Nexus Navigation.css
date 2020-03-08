@@ -52,7 +52,7 @@ body {
     display: none
 }
 #navbar-left:before {
-    content: 'JOIN US ON!';
+    content: 'JOIN US ON';
     text-align: left;
     display: block;
     padding-bottom: 5%;
