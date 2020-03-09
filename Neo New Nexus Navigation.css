@@ -51,7 +51,7 @@ body {
     text-align: left;
     display: block;
 }
-#navbar-middle {
+#navbar-middle, #navbar-right button {
     margin: 0
 }
 #navbar-middle:before {
@@ -80,13 +80,6 @@ body {
 #navbar #logout-button {
     font-weight: bold;
     background-color: rgba(0, 0, 0, 0);
-    position: fixed;
-    top: 0;
-    right: 0;
-    border-width: 0;
-}
-#navbar #logout-button img {
-    padding: 0 .75vw;
 }
 #navbar button, form button, input[type="text"], form input[type="password"], a, input, label {
     -webkit-transition-duration: 1s;
@@ -190,6 +183,15 @@ a:focus, a:hover, input:focus, input:hover, label:focus, label:hover, form butto
 #navbar-middle button {
     margin: 5% 0 0 0
 }
+#navbar #logout-button img {
+    padding: 0 .75vw;
+}
+#logout-button {
+    position: fixed;
+    top: 0;
+    right: 0;
+    border-width: 0;
+}
 #socket-connection {
     top: auto;
     bottom: 21%;
@@ -219,14 +221,22 @@ a:focus, a:hover, input:focus, input:hover, label:focus, label:hover, form butto
 #navbar-left button {
     margin: 0 1.25vw 0 0
 }
-#navbar-left button img {
+#navbar-left button img, #navbar #logout-button, #navbar #logout-button img {
     padding: .25vw
 }
-#navbar-middle button, #navbar-right button {
+#navbar-middle button {
     font-size: 3vh
 }
 #navbar-middle button {
     margin: 1.5% 0 0 0
+}
+#logout-button {
+    font-size: 0;
+    position: absolute;
+    top: auto;
+    right: 10%;
+    bottom: 6.75%;
+    left: auto;
 }
 #socket-connection {
     top: auto;
