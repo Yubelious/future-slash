@@ -83,15 +83,19 @@ article, #navbar {
 @-moz-document url("https://duelingnexus.com/login"), url("https://duelingnexus.com/register"), url("https://duelingnexus.com/recover"), url("https://duelingnexus.com/privacy_policy.html") {
 /*SECTION 3 LOGIN*/
 /*This section applies to the pages you can access without logging in.*/
-#navbar-middle:before {
-    content: url(https://raw.githubusercontent.com/victorgodoka/ygoblog/master/images/dn-logo.png);
+#navbar-middle:before, #news-area {
+    display: none
+}
+#navbar-middle:after {
+    content: ' ';
+    background: url('https://raw.githubusercontent.com/victorgodoka/ygoblog/master/images/dn-logo.png') no-repeat;
+    background-size: 40vw 22vw;
+    height: 22vw;
+    width: 40vw; 
     display: block;
     position: fixed;
-    top: 40%;
-    right: 25%;
-}
-#news-area {
-    display: none
+    top: 30%;
+    right: 15%;
 }
 #socket-connection, #navbar-right, #news-area {
     opacity: 0
