@@ -78,9 +78,6 @@ article, #navbar {
 		opacity: 1;
 	}
 }
-#navbar-middle > button:nth-of-type(1) {
-    display: none
-}
 }
 
 @-moz-document url("https://duelingnexus.com/login"), url("https://duelingnexus.com/register"), url("https://duelingnexus.com/recover"), url("https://duelingnexus.com/privacy_policy.html") {
