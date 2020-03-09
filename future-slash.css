@@ -1,7 +1,7 @@
 @-moz-document url-prefix("https://duelingnexus.com/") {
 /*SECTION 1 NONAVBAR*/
 /*Remove this section to use navbar*/
-#navbar {
+#navbar, #socket-connection {
     display: none
 }
 #app {
@@ -28,16 +28,6 @@ body {
 }
 div#app, #gamelist-area, #decks-area {
     margin-bottom: 40px
-}
-#socket-connection {
-    line-height: 1.5;
-    background-color: rgba(0, 0, 0, 0.5);
-    border: none;
-    height: 3vh;
-    z-index: 3;
-    position: fixed;
-    top: 0;
-    left: 26%;
 }
 #news-area, #duel-area, #custom-game-area[data-v-5b840ce8], #my-profile[data-v-7d3c70a7], #leaderboard-page, #donate-area[data-v-6d0fcd6e] {
     box-sizing: border-box;
