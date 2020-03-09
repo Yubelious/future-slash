@@ -1,5 +1,6 @@
 @-moz-document url-prefix("https://duelingnexus.com/") {
-/*Remove this section to use navbar*/
+/*SECTION 1 NONAVBAR*/
+/*Remove this section to use navbar
 #navbar {
     display: none
 }
@@ -10,10 +11,12 @@
     right: 0;
     bottom: 0;
     left: 0;
-}
+}*/
 }
 
 @-moz-document url-prefix("https://duelingnexus.com/") {
+/*SECTION 2 GLOBAL*/
+/*This code affects the whole site.*/
 html {
     background-image: url("https://victorgodoka.github.io/ygoblog/images/home-bg.jpg")
 }
@@ -75,9 +78,14 @@ article, #navbar {
 		opacity: 1;
 	}
 }
+#navbar-middle > button:nth-of-type(1) {
+    display: none
+}
 }
 
-@-moz-document url("https://duelingnexus.com/login"), url("https://duelingnexus.com/register"), url("https://duelingnexus.com/recover") {
+@-moz-document url("https://duelingnexus.com/login"), url("https://duelingnexus.com/register"), url("https://duelingnexus.com/recover"), url("https://duelingnexus.com/privacy_policy.html") {
+/*SECTION 3 LOGIN*/
+/*This section applies to the pages you can access without logging in.*/
 #navbar-middle:before {
     content: url(https://raw.githubusercontent.com/victorgodoka/ygoblog/master/images/dn-logo.png);
     display: block;
@@ -96,9 +104,94 @@ article, #navbar {
     margin: 0;
     padding-top: 30%;
 }
+a {
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    padding: 0;
+    text-decoration: underline;
+    opacity: .75;
+}
+a:focus {
+    font-style: italic
+}
+a:hover {
+    opacity: 1
+}
+h1, h2, h3 {
+    font-variant: small-caps;
+    line-height: 1;
+    text-transform: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    margin: .5vh;
+    padding: 0;
+}
+#newsMain {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.news_list {
+    margin: 5vh 2.5vw;
+    height: 85vh;
+    width: auto;
+    max-width: 100%;
+    overflow-y: scroll;
+    position: absolute;
+    top: 0;
+}
+@media (orientation: landscape) {
+h1, h2, h3 {
+    letter-spacing: .1vw
+}
+h1 {
+    font-size: 2vw
+}
+h2 {
+    font-size: 1.75vw
+}
+h3 {
+    font-size: 1.5vw
+}
+h4 {
+    font-size: 1.25vw
+}
+li, p {
+    font-size: 1vw
+}
+}
+@media (orientation: portrait) {
+h1, h2, h3 {
+    letter-spacing: .2vh
+}
+h1 {
+    font-size: 4vh
+}
+h2 {
+    font-size: 3.5vh
+}
+h3 {
+    font-size: 3vh
+}
+h4 {
+    font-size: 2.5vh
+}
+li, p {
+    font-size: 1.75vh
+}
+}
 }
 
 @-moz-document url("https://duelingnexus.com/home") {
+/*SECTION 4 HOME*/
+/*This section affects the page that loads when you first login*/
 @keyframes disappear {
     0% {opacity: 1}
     25% {opacity: 1}
@@ -136,12 +229,11 @@ article, #navbar {
 #navbar-right {
     z-index: 2
 }
-#navbar-middle > button:nth-of-type(1) {
-    background-color: #4f1158 !important
-}
 }
 
 @-moz-document url("https://duelingnexus.com/duel"), url("https://duelingnexus.com/gamelist"), url("https://duelingnexus.com/hostgame") {
+/*SECTION 5 DUEL ZONE*/
+/*This section effects the pages that show up when you click the Duel Zone button.*/
 #app {
     overflow-y: auto
 }
@@ -191,7 +283,7 @@ h3 {
 }
 #duel-area > div {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 0;
 }
 #duel-area button img {
@@ -207,6 +299,8 @@ select {
 }
 
 @-moz-document url("https://duelingnexus.com/decks") {
+/*SECTION 6 DECK EDITOR*/
+/*This section applies to the page that loads when you click the Deck Editor button.*/
 #app {
     overflow-y: auto
 }
@@ -216,13 +310,25 @@ select {
 }
 
 @-moz-document url("https://duelingnexus.com/profile") {
+/*SECTION 7 PROFILE*/
+/*This section applies to the page that loads when you click the Profile button.*/
 #navbar-middle > button:nth-of-type(4) {
     background-color: #4f1158 !important
 }
 }
 
 @-moz-document url("https://duelingnexus.com/leaderboard") {
+/*SECTION 8 LEADERBOARD*/
+/*This section applies to the page that loads when you click the Leaderboard button.*/
 #navbar-middle > button:nth-of-type(5) {
+    background-color: #4f1158 !important
+}
+}
+
+@-moz-document url-prefix("https://duelingnexus.com/donate") {
+/*SECTION 8 DONATE*/
+/*This section applies to the page that loads when you click the Donate button.*/
+#navbar-middle > button:nth-of-type(6) {
     background-color: #4f1158 !important
 }
 }
