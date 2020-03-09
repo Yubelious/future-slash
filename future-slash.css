@@ -26,7 +26,10 @@ body {
     height: 100vh;
     position: relative;
 }
-#socket-connection {/*This keeps the socket on the top left*/
+div#app, #gamelist-area, #decks-area {
+    margin-bottom: 40px
+}
+#socket-connection {
     line-height: 1.5;
     background-color: rgba(0, 0, 0, 0.5);
     border: none;
