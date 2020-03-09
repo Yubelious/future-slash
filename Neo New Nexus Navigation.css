@@ -218,23 +218,29 @@ a:focus, a:hover, input:focus, input:hover, label:focus, label:hover, form butto
 }
 }
 
-@media (orientation: portrait) {
+@media (max-height: 500px) and (orientation: portrait) {
 body {
-    font-size: 2.5vw
+    font-size: 2.5vh
 }
 #login-area[data-v-9bfe76b0], #register-area[data-v-4068c77b], #recover-area[data-v-8098b0b4], #navbar, #navbar-left {
     width: 100vw;
     z-index: 2;
 }
-#navbar-left button img {
-    height: 5vh;
-    width: 5vh;
+#navbar-left img {
+    height: 6vh;
+    width: 6vh;
+}
+#navbar-middle {
+    margin-top: 5vh
 }
 #navbar-middle button, #navbar-right button {
     font-size: 3vh
 }
 article {
     z-index: 1;
+}
+#socket-connection{
+    left: .75vw
 }
 }
 }
