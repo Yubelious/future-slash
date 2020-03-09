@@ -33,7 +33,6 @@ body {
 #navbar-left {
     height: 100%;
     width: 25%;
-    margin-left: 2.5%;
     position: fixed;
     left: 0;
 }
@@ -43,7 +42,6 @@ body {
     padding: .5vh;
     min-height: 0;
     min-width: 0;
-    margin: 0 1.5vw 0 0;
 }
 #navbar-left br, #navbar-middle br {
     display: none
@@ -121,7 +119,7 @@ a:focus, a:hover, input:focus, input:hover, label:focus, label:hover, form butto
 #navbar button:hover, form button:hover, input:hover, form input[type="password"]:hover, form input[type="email"]:hover {
     background-color: #4f1158 !important
 }
-#socket-connection {/*This keeps the socket on the top left*/
+#socket-connection {
     line-height: 1.5;
     background-color: rgba(0, 0, 0, 0.5);
     border: none;
@@ -130,8 +128,6 @@ a:focus, a:hover, input:focus, input:hover, label:focus, label:hover, form butto
     min-width: 0;
     z-index: 3;
     position: fixed;
-    top: 0;
-    left: 26%;
 }
 /* latin-ext */
 @font-face {
@@ -176,10 +172,14 @@ a:focus, a:hover, input:focus, input:hover, label:focus, label:hover, form butto
     width: 2vw;
 }
 #navbar-left {
-    top: 80%
+    margin-left: 1.5vw;
+    top: 80%;
 }
 #navbar-left:before {
     padding-bottom: 5%
+}
+#navbar-left button {
+    margin: 0 1.5vw 0 0
 }
 #navbar-left button img {
     padding: .5vw
@@ -190,6 +190,11 @@ a:focus, a:hover, input:focus, input:hover, label:focus, label:hover, form butto
 #navbar-middle button {
     margin: 5% 0 0 0
 }
+#socket-connection {
+    top: auto;
+    bottom: 21%;
+    left: 1.5vw;
+}
 }
 }
 
@@ -197,24 +202,36 @@ a:focus, a:hover, input:focus, input:hover, label:focus, label:hover, form butto
 /*SECTION 3 MOBILE*/
 /*This section affects smaller devices that can display either horizontally or vertically.*/
 @media (max-height: 500px) {
+#navbar {
+    padding-top: 1%
+}
 #navbar button img {
     height: 4vh;
     width: 4vh;
 }
 #navbar-left {
-    top: 85%
+    margin-left: 1.25vw;
+    top: 85%;
 }
 #navbar-left:before {
-    padding-bottom: 3%
+    padding-bottom: 2.5%
+}
+#navbar-left button {
+    margin: 0 1.25vw 0 0
 }
 #navbar-left button img {
-    padding: .5vh
+    padding: .25vw
 }
 #navbar-middle button, #navbar-right button {
-    font-size: 5vh
+    font-size: 3vh
 }
 #navbar-middle button {
-    margin: 3% 0 0 0
+    margin: 1.5% 0 0 0
+}
+#socket-connection {
+    top: auto;
+    bottom: 16%;
+    left: 1.25vw;
 }
 }
 
@@ -231,29 +248,37 @@ body {
     width: 4vh;
 }
 #navbar-left {
-    top: 85%
+    margin-left: 3vh;
+    top: 80%;
 }
-#navbar-left img {
-    height: 5vh;
-    width: 5vh;
+#navbar-left:before {
+    padding-bottom: 5%
+}
+#navbar-left button {
+    margin: 0 3vh 0 0
+}
+#navbar-left button img {
+    padding: .5vh
 }
 #navbar-middle {
-    margin-top: 5vh
+    margin-top: 5%
 }
 #navbar-middle button, #navbar-right button {
-    font-size: 3.5vh
+    font-size: 3vh
+}
+#navbar-middle button {
+    margin: 5% 0 0 0
+}
+#socket-connection {
+    top: auto;
+    bottom: 21%;
+    left: 3vh;
 }
 div#app {
     left: 0
 }
 article {
     z-index: 1;
-}
-#socket-connection {
-    top: auto;
-    right: 7%;
-    bottom: 7%;
-    left: auto;
 }
 }
 }
