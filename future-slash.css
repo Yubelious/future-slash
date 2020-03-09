@@ -1,6 +1,6 @@
 @-moz-document url-prefix("https://duelingnexus.com/") {
 /*SECTION 1 NONAVBAR*/
-/*Remove this section to use navbar
+/*Remove this section to use navbar*/
 #navbar {
     display: none
 }
@@ -11,7 +11,7 @@
     right: 0;
     bottom: 0;
     left: 0;
-}*/
+}
 }
 
 @-moz-document url-prefix("https://duelingnexus.com/") {
@@ -283,7 +283,7 @@ h3 {
 }
 #duel-area > div {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 0;
 }
 #duel-area button img {
