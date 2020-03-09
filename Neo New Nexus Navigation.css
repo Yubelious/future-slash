@@ -279,6 +279,15 @@ body {
 #navbar-middle button {
     margin: 5% 0 0 0
 }
+#navbar #logout-button img {
+    padding: 0 .75vw;
+}
+#logout-button {
+    position: fixed;
+    top: 0;
+    right: 0;
+    border-width: 0;
+}
 #socket-connection {
     top: auto;
     bottom: 21%;
