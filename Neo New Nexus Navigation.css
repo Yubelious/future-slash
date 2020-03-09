@@ -33,10 +33,16 @@ body {
 #navbar-left {
     height: 100%;
     width: 25%;
-    margin-left: 5%;
+    margin-left: 2.5%;
     position: fixed;
-    top: 80%;
     left: 0;
+}
+#navbar-left button {
+    float: left;
+    padding: .5vh;
+    min-height: 0;
+    min-width: 0;
+    margin: 0 1.5vw 0 0;
 }
 #navbar-left br, #navbar-middle br {
     display: none
@@ -45,7 +51,6 @@ body {
     content: 'JOIN US ON';
     text-align: left;
     display: block;
-    padding-bottom: 5%;
 }
 #chat-button {
     font-size: 0
@@ -58,7 +63,6 @@ body {
 }
 #navbar-middle button, #navbar-right button {
     font-family: 'Lato';
-    font-size: 1.5vw;
     text-align: left;
     vertical-align: middle;
     min-height: 0;
@@ -66,16 +70,16 @@ body {
 }
 #navbar-middle button {
     text-transform: uppercase;
-    margin: 5% 0 0 0;
     padding: 3% 3% 3% 6%;
+}
+#navbar-middle > button:nth-of-type(1) {
+    display: none
 }
 #navbar-middle button, form button, form input[type="text"], form input[type="password"], form input[type="email"] {
     width: 80%
 }
 #navbar-middle button img, #navbar-right button img {
-    float: right;
-    height: 2vw;
-    width: 2vw;
+    float: right
 }
 #navbar #logout-button {
     font-weight: bold;
@@ -167,36 +171,50 @@ a:focus, a:hover, input:focus, input:hover, label:focus, label:hover, form butto
 /*SECTION 2 COMPUTER*/
 /*This section affects the website on larger horizontal displays.*/
 @media (min-height: 500px) {
-#navbar-left button {
-    float: left;
-    padding: .5vh;
-    min-height: 0;
-    min-width: 0;
-    margin: 0 1.5vw 0 0;
-}
-#navbar-left button img {
+#navbar button img {
     height: 2vw;
     width: 2vw;
-    padding: .5vw;
+}
+#navbar-left {
+    top: 80%
+}
+#navbar-left:before {
+    padding-bottom: 5%
+}
+#navbar-left button img {
+    padding: .5vw
+}
+#navbar-middle button, #navbar-right button {
+    font-size: 1.5vw
+}
+#navbar-middle button {
+    margin: 5% 0 0 0
 }
 }
 }
 
-@-moz-document url-prefix("http://example.com") {
+@-moz-document domain("duelingnexus.com") {
 /*SECTION 3 MOBILE*/
 /*This section affects smaller devices that can display either horizontally or vertically.*/
 @media (max-height: 500px) {
-#navbar-left button {
-    float: left;
-    padding: .5vh;
-    min-height: 0;
-    min-width: 0;
-    margin: 0 1.5vh 0 0;
+#navbar button img {
+    height: 4vh;
+    width: 4vh;
+}
+#navbar-left {
+    top: 85%
+}
+#navbar-left:before {
+    padding-bottom: 3%
 }
 #navbar-left button img {
-    height: 2vh;
-    width: 2vh;
-    padding: .5vh;
+    padding: .5vh
+}
+#navbar-middle button, #navbar-right button {
+    font-size: 3.5vh
+}
+#navbar-middle button {
+    margin: 3% 0 0 0
 }
 }
 }
