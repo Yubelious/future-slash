@@ -170,7 +170,7 @@ a:focus, a:hover, input:focus, input:hover, label:focus, label:hover, form butto
 @-moz-document domain("duelingnexus.com") {
 /*SECTION 2 COMPUTER*/
 /*This section affects the website on larger horizontal displays.*/
-@media (min-height: 500px) {
+@media (min-height: 500px) and (orientation: landscape) {
 #navbar button img {
     height: 2vw;
     width: 2vw;
@@ -196,7 +196,7 @@ a:focus, a:hover, input:focus, input:hover, label:focus, label:hover, form butto
 @-moz-document domain("duelingnexus.com") {
 /*SECTION 3 MOBILE*/
 /*This section affects smaller devices that can display either horizontally or vertically.*/
-@media (max-height: 700px) {
+@media (max-height: 500px) {
 #navbar button img {
     height: 4vh;
     width: 4vh;
@@ -225,6 +225,9 @@ body {
 #login-area[data-v-9bfe76b0], #register-area[data-v-4068c77b], #recover-area[data-v-8098b0b4], #navbar, #navbar-left {
     width: 100vw;
     z-index: 2;
+}
+#navbar-left {
+    top: 85%
 }
 #navbar-left img {
     height: 6vh;
