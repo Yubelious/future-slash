@@ -38,6 +38,7 @@ body {
     left: 0;
 }
 #navbar-left button {
+    font-size: 0;
     float: left;
     padding: .5vh;
     min-height: 0;
@@ -51,9 +52,6 @@ body {
     content: 'JOIN US ON';
     text-align: left;
     display: block;
-}
-#chat-button {
-    font-size: 0
 }
 #navbar-middle {
     margin: 0
