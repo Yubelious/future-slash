@@ -175,7 +175,7 @@ h3 {
 h4 {
     font-size: 1.25vw
 }
-li, p {
+li {
     font-size: 1vw
 }
 }
@@ -195,8 +195,8 @@ h3 {
 h4 {
     font-size: 2.5vh
 }
-li, p {
-    font-size: 1.75vh
+li {
+    font-size: 2vh
 }
 }
 }
