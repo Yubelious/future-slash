@@ -231,7 +231,7 @@ input[type="email"], form input[type="email"], form input[type="password"], form
     bottom: 21%;
     left: 1.5vw;
 }
-a, label {
+a, label, #login-area p, #register-area p, #recover-area p {
     font-size: 1.75vh
 }
 }
@@ -288,7 +288,7 @@ input[type="email"], form input[type="email"], form input[type="password"], form
     bottom: 16%;
     left: 1.25vw;
 }
-a, label {
+a, label, #login-area p, #register-area p, #recover-area p {
     font-size: 2.5vh
 }
 }
@@ -348,6 +348,12 @@ form input[type="email"], form input[type="email"], form input[type="password"],
     top: auto;
     bottom: 21%;
     left: 3vh;
+}
+a, label, #login-area p, #register-area p, #recover-area p {
+    font-size: 2.5vh
+}
+input#login-remember {
+      transform: scale(2)
 }
 div#app {
     left: 0
