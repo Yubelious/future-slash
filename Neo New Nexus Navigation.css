@@ -16,10 +16,18 @@ body {
     bottom: 0;
     left: 25%;
 }
-#login-area[data-v-9bfe76b0], #register-area[data-v-4068c77b], #recover-area[data-v-8098b0b4], #navbar {
+form[data-v-9bfe76b0], form[data-v-4068c77b] {
+    margin: 0;
+    padding: 0;
+}
+article button, form div {
+    min-height: 0
+}
+#navbar, #login-area[data-v-9bfe76b0], #register-area[data-v-4068c77b], #recover-area[data-v-8098b0b4] {
     max-height: 100vh;
     width: 25%;
     position: fixed;
+    top: 0;
     margin: 0;
     left: 0;
 }
@@ -82,6 +90,10 @@ body {
     font-weight: bold;
     background-color: rgba(0, 0, 0, 0);
 }
+#login-area[data-v-9bfe76b0], #register-area[data-v-4068c77b], #recover-area[data-v-8098b0b4] {
+    background-color: rgba(0, 0, 0, 0);
+    border-width: 0;
+}
 #navbar button, form button, input[type="text"], form input[type="password"], a, input, label {
     -webkit-transition-duration: 1s;
     -moz-transition-duration: 1s;
@@ -97,8 +109,8 @@ body {
     color: white;
     background-color: #252C37;
 }
-form button, input[type="text"], form input[type="password"], form input[type="email"] {
-    text-indent: 0.5vw
+form button, form input[type="text"], form input[type="password"], form input[type="email"] {
+    padding: 0
 }
 a:focus, a:hover, input:focus, input:hover, label:focus, label:hover, form button:focus, form button:hover {
     -webkit-transition-duration: 1s;
@@ -112,6 +124,19 @@ a:focus, a:hover, input:focus, input:hover, label:focus, label:hover, form butto
 }
 #navbar button:hover, form button:hover, input:hover, form input[type="password"]:hover, form input[type="email"]:hover {
     background-color: #4f1158 !important
+}
+form div {
+    padding: 1% 0 0 0
+}
+a, input, label {
+    opacity: .7;
+    cursor: pointer;
+}
+a:hover, input:hover, label:hover {
+    opacity: 1
+}
+label {
+    line-height: 1.5
 }
 #socket-connection {
     line-height: 1.5;
@@ -178,7 +203,7 @@ a:focus, a:hover, input:focus, input:hover, label:focus, label:hover, form butto
 #navbar-left button img {
     padding: .5vw
 }
-#navbar-middle button, #navbar-right button {
+#navbar-middle button, #navbar-right button, input {
     font-size: 1.5vw
 }
 #navbar-middle button {
@@ -193,10 +218,21 @@ a:focus, a:hover, input:focus, input:hover, label:focus, label:hover, form butto
     right: 0;
     border-width: 0;
 }
+#login-area h2, #register-area h2, #recover-area h2 {
+    font-size: 3vh;
+    margin: 2vh 0 3vh 0;
+}
+input[type="email"], form input[type="email"], form input[type="password"], form input[type="text"], form button {
+    text-indent: 0.5vw;
+    height: 2.5vw;
+}
 #socket-connection {
     top: auto;
     bottom: 21%;
     left: 1.5vw;
+}
+a, label {
+    font-size: 1.75vh
 }
 }
 }
@@ -225,7 +261,7 @@ a:focus, a:hover, input:focus, input:hover, label:focus, label:hover, form butto
 #navbar-left button img, #navbar #logout-button, #navbar #logout-button img {
     padding: .25vw
 }
-#navbar-middle button {
+#navbar-middle button, input[type="email"], form input[type="email"], form input[type="password"], form input[type="text"], form button {
     font-size: 3vh
 }
 #navbar-middle button {
@@ -239,10 +275,21 @@ a:focus, a:hover, input:focus, input:hover, label:focus, label:hover, form butto
     bottom: 6.75%;
     left: auto;
 }
+#login-area h2, #register-area h2, #recover-area h2 {
+    font-size: 5vh;
+    margin: 0 0 2% 0;
+}
+input[type="email"], form input[type="email"], form input[type="password"], form input[type="text"], form button {
+    text-indent: 0.5vw;
+    height: 7vh;
+}
 #socket-connection {
     top: auto;
     bottom: 16%;
     left: 1.25vw;
+}
+a, label {
+    font-size: 2.5vh
 }
 }
 
@@ -274,7 +321,7 @@ body {
 #navbar-middle {
     margin-top: 5%
 }
-#navbar-middle button, #navbar-right button {
+#navbar-middle button, #navbar-right button, input {
     font-size: 3vh
 }
 #navbar-middle button {
@@ -288,6 +335,14 @@ body {
     top: 0;
     right: 0;
     border-width: 0;
+}
+#login-area h2, #register-area h2, #recover-area h2 {
+    font-size: 3vh;
+    margin: 2vh 0 3vh 0;
+}
+input[type="email"], form input[type="email"], form input[type="password"], form input[type="text"], form button {
+    text-indent: 1vh;
+    height: 5.5vh;
 }
 #socket-connection {
     top: auto;
@@ -306,28 +361,8 @@ article {
 @-moz-document url-prefix("https://duelingnexus.com/login"), url-prefix("https://duelingnexus.com/register"), url-prefix("https://duelingnexus.com/recover") {
 /*SECTION 4 LOGIN*/
 /*This affects the navbar area while logged out.*/
-#login-area[data-v-9bfe76b0], #register-area[data-v-4068c77b], #recover-area[data-v-8098b0b4] {
-    background-color: rgba(0, 0, 0, 0);
-    border-width: 0;
-    top: 0;
-}
 #navbar-middle button {
     display: none
-}
-#login-area h2, #register-area h2, #recover-area h2 {
-    font-size: 3vh;
-    margin: 2vh 0 3vh 0;
-}
-input[type="email"], form input[type="email"], form input[type="password"], form input[type="text"], form button {
-    height: 2.75vw;
-    padding: 0 .5vw;
-}
-a, input, label {
-    opacity: .7;
-    cursor: pointer;
-}
-a:hover, input:hover, label:hover {
-    opacity: 1
 }
 #links-area[data-v-9bfe76b0], #links-area[data-v-4068c77b], #links-area[data-v-8098b0b4] {
     border-top: 0;
