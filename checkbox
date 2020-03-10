@@ -1,0 +1,86 @@
+@-moz-document domain("duelingnexus.com") {
+form input[type="checkbox"] {
+    margin: 0
+}
+#login-area[data-v-9bfe76b0] .input-checkbox-group {
+    text-align: left;
+    text-indent: 6vh;
+    width: 90%;
+    position: relative;
+    left: 10%;
+}
+.input-checkbox-group input {
+    opacity: 0;
+    z-index: 1;
+    float: right;
+}
+label:before {
+    content: " ";
+    background-color: #111925;
+    border: .2vw solid #595e67;
+    z-index: 2;
+    display: block;
+    position: fixed;
+}
+label:hover:before {
+    border-color: #8518c3
+}
+label:after {
+    content: " ";
+    position: absolute;
+    display: none;
+}
+.input-checkbox-group input:checked ~ label:after {
+    display: block
+}
+.input-checkbox-group label:after {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    border: solid #8518c3;
+    border-width: 0 .5vh .5vh 0;
+    z-index: 3;
+}
+
+@media (min-height: 500px) and (orientation: landscape) {
+label:before {
+    height: 2.75vh;
+    width: 2.75vh;
+    margin-left: .5vw;
+}
+.input-checkbox-group label:after {
+    height: 1.5vh;
+    width: .75vh;
+    top: 1vh;
+    left: 5.25%;
+}
+
+}
+@media (max-height: 500px) {
+label:before {
+    height: 2vh;
+    width: 2vh;
+    margin-left: .5%;
+}
+.input-checkbox-group label:after {
+    height: 1.5vh;
+    width: .75vh;
+    top: 1vh;
+    left: 3.5%;
+}
+}
+
+@media (orientation: portrait) {
+label:before {
+    height: 2.5vh;
+    width: 2.5vh;
+    margin-left: .5vw;
+}
+.input-checkbox-group label:after {
+    height: 1.5vh;
+    width: .75vh;
+    top: 1.25vw;
+    left: 2.1%;
+}
+}
+}
