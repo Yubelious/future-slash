@@ -321,7 +321,7 @@ body {
 #navbar-middle {
     margin-top: 5%
 }
-#navbar-middle button, #navbar-right button, input {
+#navbar-middle button, #navbar-right button, form input[type="email"], form input[type="email"], form input[type="password"], form input[type="text"], form button {
     font-size: 3vh
 }
 #navbar-middle button {
@@ -340,7 +340,7 @@ body {
     font-size: 3vh;
     margin: 2vh 0 3vh 0;
 }
-input[type="email"], form input[type="email"], form input[type="password"], form input[type="text"], form button {
+form input[type="email"], form input[type="email"], form input[type="password"], form input[type="text"], form button {
     text-indent: 1vh;
     height: 5.5vh;
 }
