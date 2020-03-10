@@ -47,6 +47,8 @@ article button, form div {
 }
 #navbar-left button {
     font-size: 0;
+    background-color: #020813;
+    border-width: 0;
     float: left;
     padding: .5vh;
     min-height: 0;
@@ -104,7 +106,7 @@ article button, form div {
     -o-transition-property: all;
     transition-property: all;
 }
-#navbar button:not(#logout-button), form button, form input[type="text"], form input[type="password"], form input[type="email"] {
+#navbar-middle button, form button, form input[type="text"], form input[type="password"], form input[type="email"] {
     border-width: 0;
     color: white;
     background-color: #111925;
