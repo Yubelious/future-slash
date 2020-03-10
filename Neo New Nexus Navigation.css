@@ -364,7 +364,7 @@ article {
 @-moz-document url-prefix("https://duelingnexus.com/login"), url-prefix("https://duelingnexus.com/register"), url-prefix("https://duelingnexus.com/recover") {
 /*SECTION 4 LOGIN*/
 /*This affects the navbar area while logged out.*/
-#navbar-middle button {
+#navbar-middle button, #navbar-right {
     display: none
 }
 #links-area[data-v-9bfe76b0], #links-area[data-v-4068c77b], #links-area[data-v-8098b0b4] {
