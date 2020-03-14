@@ -1,0 +1,32 @@
+Step 1
+Add #phase-column between #card-column and #game-column then #right column after #game-column.
+
+Step 2
+Remove style="max-height: 621px;" from for #card-column.
+
+Step 3
+Move chat to the end of #card-column.
+
+Step 4
+Move #game-avatar-area game-avatar-left from #game-column to #phase-column.
+
+Step 5
+Add #phase-container to #phase-column.
+
+Step 6
+Add .engine-button-disabled #game-turn-counter to #phase-container.
+
+Step 7
+Move all 6 phase buttons from #game-column into #phase-container and change the text inside them.
+
+Step 8
+Move #game-avatar-area game-avatar-right and the 2 buttons from #game-column to #right-column.
+
+Step 9
+Move the div containing #game-life-player into #game-life-bar-player and rename the div "#game-life-player". Repeat with #game-life-opponent (into #game-life-bar-opponent).
+
+Step 10
+Same with timer number.
+
+Step 11
+Name the div that contains the turn player's name "<div id="game-player-details" class="details" style="direction: rtl;">, and the div that contains the opponent's name "<div id="player-opponent-details" class="details">". 
