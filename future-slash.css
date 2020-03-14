@@ -50,6 +50,13 @@ div#app, #gamelist-area, #decks-area {
     height: 65%;
     top: 25%;
 }
+article button, .fake-button[data-v-6f705b54], .fake-button[data-v-7d3c70a7], select {
+    background-color: #111925;
+    border: none;
+}
+article button:hover, .fake-button[data-v-6f705b54]:hover, .fake-button[data-v-7d3c70a7]:hover {
+    background-color: #4f1158
+}
 #custom-game-area[data-v-5b840ce8], #my-profile[data-v-7d3c70a7], #leaderboard-page, #donate-area[data-v-6d0fcd6e] {
     height: 75%;
     top: 15%;
@@ -265,7 +272,7 @@ li {
     overflow-y: auto
 }
 #navbar-middle > button:nth-of-type(2) {
-    background-color: #8518c3 !important
+    background-color: #4f1158 !important
 }
 h2, hr {
     display: none
@@ -301,12 +308,7 @@ h3 {
 }
 #duel-area > div > p > button, select {
     text-align: left;
-    background-color: #252C37;
-    border: none;
     width: 100%;
-}
-#duel-area > div > p > button:hover {
-    background-color: #4f1158
 }
 #duel-area > div {
     display: grid;
@@ -332,7 +334,7 @@ select {
     overflow-y: auto
 }
 #navbar-middle > button:nth-of-type(3) {
-    background-color: #8518c3 !important
+    background-color: #4f1158 !important
 }
 }
 
@@ -340,7 +342,7 @@ select {
 /*SECTION 7 PROFILE*/
 /*This section applies to the page that loads when you click the Profile button.*/
 #navbar-middle > button:nth-of-type(4) {
-    background-color: #8518c3 !important
+    background-color: #4f1158 !important
 }
 }
 
@@ -348,7 +350,7 @@ select {
 /*SECTION 8 LEADERBOARD*/
 /*This section applies to the page that loads when you click the Leaderboard button.*/
 #navbar-middle > button:nth-of-type(5) {
-    background-color: #8518c3 !important
+    background-color: #4f1158 !important
 }
 }
 
@@ -356,7 +358,7 @@ select {
 /*SECTION 9 DONATE*/
 /*This section applies to the page that loads when you click the Donate button.*/
 #navbar-middle > button:nth-of-type(6) {
-    background-color: #8518c3 !important
+    background-color: #4f1158 !important
 }
 }
 
@@ -482,7 +484,7 @@ table#game-field {
 }
 
 @-moz-document url-prefix("https://duelingnexus.com/editor/") {
-/*SECTION 12 EDITOR*/
+/*SECTION 11 EDITOR*/
 /*This section affects the Editor pages, where you build your deck.*/
 /*Editor top*/
 @media (orientation: landscape) {
