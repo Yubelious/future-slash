@@ -1,6 +1,6 @@
 @-moz-document url-prefix("https://duelingnexus.com/") {
 /*SECTION 1 NONAVBAR*/
-/*Remove this section to use navbar
+/*Remove this section to use navbar*/
 #navbar, #socket-connection, #login-area {
     display: none
 }
@@ -12,7 +12,7 @@
     right: 0;
     bottom: 0;
     left: 0;
-}*/
+}
 }
 
 @-moz-document url-prefix("https://duelingnexus.com/") {
@@ -22,7 +22,6 @@ html {
     background-image: url("https://victorgodoka.github.io/ygoblog/images/home-bg.jpg")
 }
 body {
-    font-size: 2.5vh;
     margin: 0;
     height: 100vh;
     position: relative;
@@ -266,7 +265,7 @@ li {
     overflow-y: auto
 }
 #navbar-middle > button:nth-of-type(2) {
-    background-color: #4f1158 !important
+    background-color: #8518c3 !important
 }
 h2, hr {
     display: none
@@ -333,7 +332,7 @@ select {
     overflow-y: auto
 }
 #navbar-middle > button:nth-of-type(3) {
-    background-color: #4f1158 !important
+    background-color: #8518c3 !important
 }
 }
 
@@ -341,7 +340,7 @@ select {
 /*SECTION 7 PROFILE*/
 /*This section applies to the page that loads when you click the Profile button.*/
 #navbar-middle > button:nth-of-type(4) {
-    background-color: #4f1158 !important
+    background-color: #8518c3 !important
 }
 }
 
@@ -349,7 +348,7 @@ select {
 /*SECTION 8 LEADERBOARD*/
 /*This section applies to the page that loads when you click the Leaderboard button.*/
 #navbar-middle > button:nth-of-type(5) {
-    background-color: #4f1158 !important
+    background-color: #8518c3 !important
 }
 }
 
@@ -357,6 +356,6 @@ select {
 /*SECTION 8 DONATE*/
 /*This section applies to the page that loads when you click the Donate button.*/
 #navbar-middle > button:nth-of-type(6) {
-    background-color: #4f1158 !important
+    background-color: #8518c3 !important
 }
 }
