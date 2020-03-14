@@ -77,9 +77,9 @@ article button, form div {
     text-transform: uppercase;
     padding: 3% 3% 3% 6%;
 }
-#navbar-middle > button:nth-of-type(1) {
+/*#navbar-middle > button:nth-of-type(1) {
     display: none
-}
+}*/
 #navbar-middle button, form button, form input[type="text"], form input[type="password"], form input[type="email"] {
     width: 80%
 }
@@ -208,7 +208,7 @@ a, label, #login-area p, #register-area p, #recover-area p {
 @-moz-document domain("duelingnexus.com") {
 /*SECTION 3 MOBILE*/
 /*This section affects smaller devices that can display either horizontally or vertically.*/
-@media (max-height: 500px) {
+@media (max-height: 500px) and (orientation: landscape) {
 #navbar {
     padding-top: 1%
 }
@@ -218,7 +218,7 @@ a, label, #login-area p, #register-area p, #recover-area p {
 }
 #navbar-left {
     margin-left: 1.25vw;
-    top: 85%;
+    top: 75%;
 }
 #navbar-left:before {
     padding-bottom: 2.5%
@@ -235,12 +235,15 @@ a, label, #login-area p, #register-area p, #recover-area p {
 #navbar-middle button {
     margin: 1.5% 0 0 0
 }
+#navbar-right {
+    height: 100vh
+}
 #logout-button {
     font-size: 0;
     position: absolute;
     top: auto;
     right: 10%;
-    bottom: 6.75%;
+    bottom: 13.5%;
     left: auto;
 }
 #login-area h2, #register-area h2, #recover-area h2 {
@@ -253,7 +256,7 @@ input[type="email"], form input[type="email"], form input[type="password"], form
 }
 #socket-connection {
     top: auto;
-    bottom: 16%;
+    bottom: 7%;
     left: 1.25vw;
 }
 a, label, #login-area p, #register-area p, #recover-area p {
@@ -275,7 +278,7 @@ body {
 }
 #navbar-left {
     margin-left: 3vh;
-    top: 80%;
+    top: 75%;
 }
 #navbar-left:before {
     padding-bottom: 5%
@@ -314,7 +317,7 @@ form input[type="email"], form input[type="email"], form input[type="password"],
 }
 #socket-connection {
     top: auto;
-    bottom: 21%;
+    bottom: 7%;
     left: 3vh;
 }
 a, label, #login-area p, #register-area p, #recover-area p {
