@@ -1,6 +1,6 @@
 @-moz-document url-prefix("https://duelingnexus.com/") {
 /*SECTION 1 NONAVBAR*/
-/*Remove this section to use navbar*/
+/*Remove this section to use navbar
 #navbar, #socket-connection, #login-area {
     display: none
 }
@@ -12,7 +12,7 @@
     right: 0;
     bottom: 0;
     left: 0;
-}
+}*/
 }
 
 @-moz-document url-prefix("https://duelingnexus.com/") {
@@ -582,21 +582,9 @@ table#game-field {
     position: relative;
 }
 .editor-search-description {
-    -webkit-transition-duration: 2s;
-    -moz-transition-duration: 2s;
-    -ms-transition-duration: 2s;
-    -o-transition-duration: 2s;
-    transition-duration: 2s;
     font-size: 1vw;
+    word-wrap: break-word;
     margin-left: 22.41%;
-    position: absolute;
-}
-.editor-search-description:hover {
-    font-size: .666vw;
-    background-color: rgba(0, 0, 0, 0.5);
-    overflow: visible;
-    margin-left: 0;
-    position: absolute;
 }
 .card-preview, .rs-ext-table-button {
     border-width: .15vw
