@@ -1,8 +1,7 @@
 @-moz-document domain("duelingnexus.com") {
-/*SECTION 1 GENERAL*/
-/*This section affects the website regardless of the device you're using.*/
+/*SECTION 12 NAVBAR*/
+/*This section affects the navbar and login regardless of the device you're using.*/
 body {
-    font-size: 2.5vh;
     margin: 0;
     height: 100vh;
     position: relative;
@@ -69,7 +68,6 @@ article button, form div {
     content: url('https://i.imgur.com/s5Fi8nR.png')
 }
 #navbar-middle button, #navbar-right button {
-    font-family: 'Lato';
     text-align: left;
     vertical-align: middle;
     min-height: 0;
@@ -79,9 +77,9 @@ article button, form div {
     text-transform: uppercase;
     padding: 3% 3% 3% 6%;
 }
-#navbar-middle > button:nth-of-type(1) {
+/*#navbar-middle > button:nth-of-type(1) {
     display: none
-}
+}*/
 #navbar-middle button, form button, form input[type="text"], form input[type="password"], form input[type="email"] {
     width: 80%
 }
@@ -125,7 +123,7 @@ a:focus, a:hover, input:focus, input:hover, label:focus, label:hover, form butto
     transition-property: all;
 }
 #navbar button:hover, form button:hover, input:hover, form input[type="password"]:hover, form input[type="email"]:hover {
-    background-color: #8518c3 !important
+    background-color: #4f1158 !important
 }
 form div {
     padding: 1% 0 0 0
@@ -150,43 +148,11 @@ label {
     z-index: 3;
     position: fixed;
 }
-/* latin-ext */
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 100;
-  src: local('Lato Hairline'), local('Lato-Hairline'), url(https://fonts.gstatic.com/s/lato/v16/S6u8w4BMUTPHh30AUi-qJCY.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 100;
-  src: local('Lato Hairline'), local('Lato-Hairline'), url(https://fonts.gstatic.com/s/lato/v16/S6u8w4BMUTPHh30AXC-q.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Lato Light'), local('Lato-Light'), url(https://fonts.gstatic.com/s/lato/v16/S6u9w4BMUTPHh7USSwaPGR_p.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Lato Light'), local('Lato-Light'), url(https://fonts.gstatic.com/s/lato/v16/S6u9w4BMUTPHh7USSwiPGQ.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
 }
 
 @-moz-document domain("duelingnexus.com") {
-/*SECTION 2 COMPUTER*/
-/*This section affects the website on larger horizontal displays.*/
+/*SECTION 13 COMPUTER*/
+/*This section affects the navbar and login on larger horizontal displays.*/
 @media (min-height: 500px) and (orientation: landscape) {
 #navbar button img {
     height: 2vw;
@@ -194,7 +160,7 @@ label {
 }
 #navbar-left {
     margin-left: 1.5vw;
-    top: 80%;
+    top: 75%;
 }
 #navbar-left:before {
     padding-bottom: 5%
@@ -230,7 +196,7 @@ input[type="email"], form input[type="email"], form input[type="password"], form
 }
 #socket-connection {
     top: auto;
-    bottom: 21%;
+    bottom: 7%;
     left: 1.5vw;
 }
 a, label, #login-area p, #register-area p, #recover-area p {
@@ -240,9 +206,9 @@ a, label, #login-area p, #register-area p, #recover-area p {
 }
 
 @-moz-document domain("duelingnexus.com") {
-/*SECTION 3 MOBILE*/
-/*This section affects smaller devices that can display either horizontally or vertically.*/
-@media (max-height: 500px) {
+/*SECTION 14 MOBILE*/
+/*This section affects navbar and login on smaller devices that can display either horizontally or vertically.*/
+@media (max-height: 500px) and (orientation: landscape) {
 #navbar {
     padding-top: 1%
 }
@@ -252,7 +218,7 @@ a, label, #login-area p, #register-area p, #recover-area p {
 }
 #navbar-left {
     margin-left: 1.25vw;
-    top: 85%;
+    top: 75%;
 }
 #navbar-left:before {
     padding-bottom: 2.5%
@@ -269,12 +235,15 @@ a, label, #login-area p, #register-area p, #recover-area p {
 #navbar-middle button {
     margin: 1.5% 0 0 0
 }
+#navbar-right {
+    height: 100vh
+}
 #logout-button {
     font-size: 0;
     position: absolute;
     top: auto;
     right: 10%;
-    bottom: 6.75%;
+    bottom: 13.5%;
     left: auto;
 }
 #login-area h2, #register-area h2, #recover-area h2 {
@@ -287,7 +256,7 @@ input[type="email"], form input[type="email"], form input[type="password"], form
 }
 #socket-connection {
     top: auto;
-    bottom: 16%;
+    bottom: 7%;
     left: 1.25vw;
 }
 a, label, #login-area p, #register-area p, #recover-area p {
@@ -309,7 +278,7 @@ body {
 }
 #navbar-left {
     margin-left: 3vh;
-    top: 80%;
+    top: 75%;
 }
 #navbar-left:before {
     padding-bottom: 5%
@@ -348,7 +317,7 @@ form input[type="email"], form input[type="email"], form input[type="password"],
 }
 #socket-connection {
     top: auto;
-    bottom: 21%;
+    bottom: 7%;
     left: 3vh;
 }
 a, label, #login-area p, #register-area p, #recover-area p {
@@ -364,8 +333,8 @@ article {
 }
 
 @-moz-document url-prefix("https://duelingnexus.com/login"), url-prefix("https://duelingnexus.com/register"), url-prefix("https://duelingnexus.com/recover") {
-/*SECTION 4 LOGIN*/
-/*This affects the navbar area while logged out.*/
+/*SECTION 15 LOGIN*/
+/*This affects the navbar area while logged out. This smooths out the login animation.*/
 #navbar-middle button, #navbar-right {
     display: none
 }

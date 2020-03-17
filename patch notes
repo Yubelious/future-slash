@@ -1,0 +1,2 @@
+Patch Notes
+v1.1: Changed default font size back to the previous .9em, put the home button back where it belongs so people can waste 3 seconds of their life every time they misclick it, moved the connection socket under the navbar-left, fixed a bug with the logout button, recoloured some stuff, moved the news article down so it doesn't cover the ad, and added code to the editor pages (as well as its related siding counterparts).
