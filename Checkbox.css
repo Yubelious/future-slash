@@ -1,4 +1,6 @@
-@-moz-document domain("duelingnexus.com") {
+@-moz-document url("https://duelingnexus.com/login") {
+/*SECTION 16 CHECKBOX*/
+/*This is the custom CSS checkbox on the login page.*/
 form input[type="checkbox"] {
     margin: 0
 }
