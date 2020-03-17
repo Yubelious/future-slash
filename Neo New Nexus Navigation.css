@@ -1,6 +1,6 @@
 @-moz-document domain("duelingnexus.com") {
-/*SECTION 1 GENERAL*/
-/*This section affects the website regardless of the device you're using.*/
+/*SECTION 12 NAVBAR*/
+/*This section affects the navbar and login regardless of the device you're using.*/
 body {
     margin: 0;
     height: 100vh;
@@ -123,7 +123,7 @@ a:focus, a:hover, input:focus, input:hover, label:focus, label:hover, form butto
     transition-property: all;
 }
 #navbar button:hover, form button:hover, input:hover, form input[type="password"]:hover, form input[type="email"]:hover {
-    background-color: #8518c3 !important
+    background-color: #4f1158 !important
 }
 form div {
     padding: 1% 0 0 0
@@ -151,8 +151,8 @@ label {
 }
 
 @-moz-document domain("duelingnexus.com") {
-/*SECTION 2 COMPUTER*/
-/*This section affects the website on larger horizontal displays.*/
+/*SECTION 13 COMPUTER*/
+/*This section affects the navbar and login on larger horizontal displays.*/
 @media (min-height: 500px) and (orientation: landscape) {
 #navbar button img {
     height: 2vw;
@@ -206,8 +206,8 @@ a, label, #login-area p, #register-area p, #recover-area p {
 }
 
 @-moz-document domain("duelingnexus.com") {
-/*SECTION 3 MOBILE*/
-/*This section affects smaller devices that can display either horizontally or vertically.*/
+/*SECTION 14 MOBILE*/
+/*This section affects navbar and login on smaller devices that can display either horizontally or vertically.*/
 @media (max-height: 500px) and (orientation: landscape) {
 #navbar {
     padding-top: 1%
@@ -333,8 +333,8 @@ article {
 }
 
 @-moz-document url-prefix("https://duelingnexus.com/login"), url-prefix("https://duelingnexus.com/register"), url-prefix("https://duelingnexus.com/recover") {
-/*SECTION 4 LOGIN*/
-/*This affects the navbar area while logged out.*/
+/*SECTION 15 LOGIN*/
+/*This affects the navbar area while logged out. This smooths out the login animation.*/
 #navbar-middle button, #navbar-right {
     display: none
 }
