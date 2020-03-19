@@ -4,7 +4,7 @@
 #navbar, #socket-connection, #login-area {
     display: none
 }
-#app, div[data-v-9bfe76b0], div[data-v-9bfe76b0] #news-area {
+#app, div[data-v-9bfe76b0], div[data-v-9bfe76b0] #news-area, #nexus-gui-popup-background {
     height: 100%;
     width: 100%;
     position: fixed;
@@ -31,6 +31,13 @@ article {
 }
 div#app {
     margin-bottom: 40px
+}
+#home-area {
+    background-color: rgba(0, 0, 0, 0);
+    border-width: 0;
+}
+#home-area h2, #home-area button {
+    display: none
 }
 #duel-area, #gamelist-area[data-v-2c3a555c], #custom-game-area[data-v-5b840ce8], #decks-area[data-v-6f705b54], #my-profile[data-v-7d3c70a7], #leaderboard-page, #donate-area[data-v-6d0fcd6e] {
     box-sizing: border-box;
@@ -76,14 +83,36 @@ article {
     background-color: #101522b4;
     border-radius: 7px;
 }
-article, #navbar {
+#navbar, #socket-connection {
 	opacity: 1;
-	animation-name: fadeInOpacity;
+	animation-name: fadein;
 	animation-iteration-count: 1;
 	animation-timing-function: ease-in;
-	animation-duration: 0.5s;
+	animation-duration: .5s
 }
-@keyframes fadeInOpacity {
+#home-area {
+    animation: disappear 2.5s;
+    font-size: 5vh;
+    background-color: rgba(0, 0, 0, .5);
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding-top: 30%;
+    opacity: 0;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#news-area {
+    opacity: 0
+}
+@keyframes disappear {
+    0% {opacity: 1}
+    25% {opacity: 1}
+    100% {opacity: 0}
+}
+@keyframes fadein {
 	0% {
 		opacity: 0;
 	}
@@ -220,48 +249,15 @@ li {
 @-moz-document url("https://duelingnexus.com/home") {
 /*SECTION 4 HOME*/
 /*This section affects the page that loads when you first login*/
-@keyframes disappear {
-    0% {opacity: 1}
-    25% {opacity: 1}
-    100% {opacity: 0}
-}
-@keyframes appear {
-    0% {opacity: 0}
-    50% {opacity: 0}
-    100% {opacity: 1}
-}
 #navbar-middle > button:nth-of-type(1) {
     background-color: #4f1158 !important
-}
-#home-area {
-    background-color: rgba(0, 0, 0, 0);
-    border-width: 0;
-}
-#home-area p:nth-child(2) {
-    animation: disappear 3s;
-    font-size: 5vh;
-    background-color: rgba(0, 0, 0, .5);
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    padding-top: 30%;
-    opacity: 0;
-    z-index: -1;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-#home-area h2, #home-area button {
-    display: none
-}
-#navbar-middle, #navbar-right, #news-area, #socket-connection {
-    animation: appear 3s
 }
 #navbar-right {
     z-index: 2
 }
 #news-area {
     box-sizing: border-box;
+    opacity: 1;
     display: block;
     overflow-y: auto;
     min-height: 0;
@@ -275,6 +271,20 @@ li {
     top: 30%;
     right: 12%;
     left: 12%;
+}
+article:not(#home-area) {
+    animation: appear 3s
+}
+@keyframes appear {
+	0% {
+		opacity: 0;
+	}
+    11% {
+        opacity: 0;
+    }
+	100% {
+		opacity: 1;
+	}
 }
 }
 
@@ -544,6 +554,13 @@ td, th {
 /*This section applies to the page that loads when you click the Profile button.*/
 #navbar-middle > button:nth-of-type(4) {
     background-color: #4f1158 !important
+}
+.remove-custom-button[data-v-7d3c70a7], .fake-button[data-v-7d3c70a7] {
+    text-align: center;
+    line-height: 1;
+    box-sizing: border-box;
+    width: 70%;
+    padding: 1vw;
 }
 }
 
