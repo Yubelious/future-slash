@@ -47,7 +47,8 @@ article button, form div {
 #navbar-left button {
     font-size: 0;
     background-color: #020813;
-    border-width: 0;
+    border-color: #595e67;
+    border-width: .15vw;
     float: left;
     padding: .5vh;
     min-height: 0;
@@ -71,10 +72,10 @@ article button, form div {
     text-align: left;
     vertical-align: middle;
     min-height: 0;
-    border: none;
 }
 #navbar-middle button {
     text-transform: uppercase;
+    border-width: .15vw;
     padding: 3% 3% 3% 6%;
 }
 /*#navbar-middle > button:nth-of-type(1) {
@@ -89,6 +90,7 @@ article button, form div {
 #navbar #logout-button {
     font-weight: bold;
     background-color: rgba(0, 0, 0, 0);
+    border: 0;
 }
 #login-area[data-v-9bfe76b0], #register-area[data-v-4068c77b], #recover-area[data-v-8098b0b4] {
     background-color: rgba(0, 0, 0, 0);
@@ -99,13 +101,8 @@ article button, form div {
     -moz-transition-duration: 1s;
     -o-transition-duration: 1s;
     transition-duration: 1s;
-    -webkit-transition-property: all;
-    -moz-transition-property: all;
-    -o-transition-property: all;
-    transition-property: all;
 }
 #navbar-middle button, form button, form input[type="text"], form input[type="password"], form input[type="email"] {
-    border-width: 0;
     color: white;
     background-color: #111925;
 }
@@ -117,13 +114,10 @@ a:focus, a:hover, input:focus, input:hover, label:focus, label:hover, form butto
     -moz-transition-duration: 1s;
     -o-transition-duration: 1s;
     transition-duration: 1s;
-    -webkit-transition-property: all;
-    -moz-transition-property: all;
-    -o-transition-property: all;
-    transition-property: all;
 }
 #navbar button:hover, form button:hover, input:hover, form input[type="password"]:hover, form input[type="email"]:hover {
-    background-color: #4f1158 !important
+    background-color: #4f1158 !important;
+    border-color: #84598b;
 }
 form div {
     padding: 1% 0 0 0
@@ -134,9 +128,6 @@ a, input, label {
 }
 a:hover, input:hover, label:hover {
     opacity: 1
-}
-label {
-    line-height: 1
 }
 #socket-connection {
     line-height: 1.5;
@@ -342,5 +333,97 @@ article {
     border-top: 0;
     margin: 0;
     padding: 0;
+}
+}
+
+@-moz-document url("https://duelingnexus.com/login") {
+/*SECTION 16 CHECKBOX*/
+/*This is the custom CSS checkbox on the login page.*/
+form input[type="checkbox"] {
+    margin: 0
+}
+#login-area[data-v-9bfe76b0] .input-checkbox-group {
+    text-align: left;
+    text-indent: 6vh;
+    width: 90%;
+    position: relative;
+    left: 10%;
+}
+.input-checkbox-group input {
+    opacity: 0;
+    z-index: 1;
+    float: right;
+}
+label {
+    line-height: 1
+}
+label:before {
+    content: " ";
+    background-color: #111925;
+    border: .2vw solid #595e67;
+    z-index: 2;
+    display: block;
+    position: fixed;
+}
+label:hover:before {
+    border-color: #8518c3
+}
+label:after {
+    content: " ";
+    position: absolute;
+    display: none;
+}
+.input-checkbox-group input:checked ~ label:after {
+    display: block
+}
+.input-checkbox-group label:after {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    border: solid #8518c3;
+    border-width: 0 .5vh .5vh 0;
+    z-index: 3;
+}
+
+@media (min-height: 500px) and (orientation: landscape) {
+label:before {
+    height: 2.75vh;
+    width: 2.75vh;
+    margin-left: .5vw;
+}
+.input-checkbox-group label:after {
+    height: 1.5vh;
+    width: .75vh;
+    top: 1vh;
+    left: 5.25%;
+}
+
+}
+@media (max-height: 500px) {
+label:before {
+    height: 2vh;
+    width: 2vh;
+    margin-left: .5%;
+}
+.input-checkbox-group label:after {
+    height: 1.5vh;
+    width: .75vh;
+    top: 1vh;
+    left: 3.5%;
+}
+}
+
+@media (orientation: portrait) {
+label:before {
+    height: 2.5vh;
+    width: 2.5vh;
+    margin-left: .5vw;
+}
+.input-checkbox-group label:after {
+    height: 1.5vh;
+    width: .75vh;
+    top: 1.25vw;
+    left: 2.1%;
+}
 }
 }
