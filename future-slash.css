@@ -22,8 +22,9 @@ html {
     background-image: url("https://victorgodoka.github.io/ygoblog/images/home-bg.jpg")
 }
 body {
-    margin: 0;
+    font-size: .8em;
     height: 100vh;
+    margin: 0;
     position: relative;
 }
 article {
@@ -69,10 +70,10 @@ article button:hover, .fake-button[data-v-6f705b54]:hover, .fake-button[data-v-7
     background-color: #4f1158;
     border-color: #84598b;
 }
-article button img {
+article button img, article .fake-button img {
     float: right;
-    height: 2vw;
-    width: 2vw;
+    height: 4vh;
+    width: 4vh;
 }
 #gamelist-area[data-v-2c3a555c], #custom-game-area[data-v-5b840ce8], #decks-area[data-v-6f705b54], #my-profile[data-v-7d3c70a7], #leaderboard-page, #donate-area[data-v-6d0fcd6e] {
     height: 75%;
@@ -393,16 +394,27 @@ hr:nth-of-type(1), hr:nth-of-type(4) {
     display: none
 }
 /*gamelist*/
-#gamelist-container[data-v-2c3a555c] {
-    overflow-y: scroll;
-    overflow-x: hidden;
-    height: 68%;
-}
 #gamelist-buttons[data-v-2c3a555c] {
-    height: 6vh
+    height: 6vh;
+    max-height: 10%;
+    overflow: visible;
+    margin: 0;
 }
 #gamelist-buttons[data-v-2c3a555c] button {
     line-height: 5vh
+}
+#gamelist-filters[data-v-2c3a555c] {
+    max-height: 20%;
+    overflow: visible;
+    margin: 0;
+}
+#gamelist-filters[data-v-2c3a555c] p {
+    margin: 2%
+}
+#gamelist-container[data-v-2c3a555c] {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 70%;
 }
 /*custom checkbox*/
 input[type="checkbox"] {
@@ -543,9 +555,45 @@ td, th {
 #navbar-middle > button:nth-of-type(3) {
     background-color: #4f1158 !important
 }
+h2[data-v-6f705b54] {
+    overflow: visible;
+    max-height: 6%;
+    margin: 1%;
+}
+#decks-buttons[data-v-6f705b54] {
+    overflow: visible;
+    max-height: 15%;
+    margin-bottom : 1%;
+}
+#decks-buttons button, button[data-v-6f705b54], .fake-button[data-v-6f705b54] {
+    text-align: center;
+    box-sizing: border-box;
+    width: 24%;
+    padding: 1vh;
+    margin-right: 1%;
+}
 #decks-container {
     overflow-y: auto;
     max-height: 75%;
+    position: absolute;
+    bottom: 2%;
+}
+table[data-v-6f705b54] {
+    width: 99%;
+    table-layout: fixed;
+}
+.td-big {
+    text-align: left;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 65%;
+    min-width: 0;
+    overflow: hidden;
+}
+td {
+    font-size: 1vw;
+    text-align: center;
+    padding: .75vw;
 }
 }
 
