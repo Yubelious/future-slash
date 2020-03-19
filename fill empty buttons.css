@@ -1,0 +1,28 @@
+@-moz-document url-prefix("https://duelingnexus.com/game") {
+/*Your empty buttons look deflated and limp. It makes them ugly and hard to click or poke. The purpose of this proposal is to inflate them.*/
+#game-option-window {
+    width: 45vw
+}
+#game-option-window .engine-button {
+    max-width: 45%
+}
+#game-option-list {
+    padding: 0.5vw
+}
+#game-option-list .engine-button {/*This gives buttons a shape.*/
+    height: auto;
+    width: auto;
+    min-width: 5vw;
+    margin: 0.25vw;
+    padding: 0;
+    position: relative;
+    bottom: 0;
+}
+#game-option-list .engine-button:before, #game-option-list .engine-button:after {/*This gives empty buttons a shape.*/
+    content: "~";
+    font-size: 0;
+}
+#game-yesno-yes-button, #game-yesno-no-button {
+    font-size: 3vw
+}
+}
