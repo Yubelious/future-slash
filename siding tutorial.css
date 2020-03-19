@@ -1,0 +1,25 @@
+@-moz-document url-prefix("https://duelingnexus.com/game") {
+/*The purpose of this proposal is to add a siding tutorial in the same column as the siding button.*/
+#game-siding-column-2 {
+    height: 37.67vw;
+    width: 37.67vw;
+}
+#game-siding-column-2:after {
+    content: 'HOW TO SIDE: \A \A To side on desktop, right click a card(s) in the "side" area and it will automatically move to the "deck", then right click a card(s) in the "deck" and it will automatically move to the "side". If you are on Android, drag a card(s) to the bottom right corner with your finger.\A \A Note that you will not be able to complete siding until the cards you sided in are in the bottom right corner of the "deck", and there are the same number of cards in the "deck" after siding as before siding. When you are done, click the buttom below.';
+    font: 1.5vw/1 sans-serif;
+    text-align: justify;
+    white-space: pre-line;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: auto;
+    width: 35.5vw;
+    padding: 1vw;
+	display: block;
+    position: fixed;
+}
+button#game-siding-done {
+    z-index: 2;
+    position: absolute;
+    bottom: 1vw;
+    left: 1vw;
+}
+}
