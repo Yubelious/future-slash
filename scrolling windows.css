@@ -1,0 +1,27 @@
+@-moz-document url-prefix("https://duelingnexus.com/game") {
+/*The purpose of this proposal is to add transparency to windows, and allow them to scroll when overflowing.*/
+#game-column, #game-to-spectator-button, #game-to-duelist-button, #game-deck-dropdown, .template-button, #game-rps-first, #game-rps-second, #game-end-button {
+    width: auto
+}
+#game-alert-window, #game-end-window, #options-window, #game-results-container, #game-message-window, #game-waiting-menu, #game-selection-window, #game-yesno-window, #game-position-window, #game-option-window, #game-announce-window, #game-announce-card-window {/*This makes the windows transparent.*/
+    background-color: rgba(0, 0, 0, 0.5)
+}
+#game-announce-window, #game-selection-window, #game-announce-card-window {
+    overflow-y: auto;
+    cursor: s-resize;
+}
+#game-announce-window {
+    height: 10vw;
+    width: 10vw;
+}
+#game-selection-window, #game-announce-card-window {
+    transform: translateY(-10vw) translateX(35vw);
+    height: 20vw;
+    width: 40vw;
+    margin: 0;
+    padding-top: 0;
+}
+.game-selection-card {
+    margin: 1vh 1vw
+}
+}
