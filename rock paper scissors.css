@@ -1,7 +1,7 @@
 @-moz-document url-prefix("https://duelingnexus.com/game") {
 /*The purpose of this proposal is to move the rps container lower on the display, and resize its images.*/
 #game-rps-container {
-    margin-top: 20vh
+    margin-top: 45vh
 }
 #game-rps-container img{
     height: 28.8vh;
