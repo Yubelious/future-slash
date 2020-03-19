@@ -6,7 +6,7 @@ body {
     height: 100vh;
     position: relative;
 }
-#app {
+#app, #nexus-gui-popup-background {
     height: 100%;
     width: 75%;
     position: fixed;
