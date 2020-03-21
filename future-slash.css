@@ -1,17 +1,17 @@
 @-moz-document url-prefix("https://duelingnexus.com/") {
 /*SECTION 1 NONAVBAR*/
-/*Remove this section to use navbar*/
-#navbar, #socket-connection, #login-area {
+/*This affects the site while the navbar is colapsed.*/
+.app-navbar-hidden #navbar, .app-navbar-hidden #socket-connection, .app-navbar-hidden #login-area {
     display: none
 }
-#app, div[data-v-9bfe76b0], div[data-v-9bfe76b0] #news-area, #nexus-gui-popup-background {
+.app-navbar-hidden, .app-navbar-hidden div[data-v-9bfe76b0], .app-navbar-hidden div[data-v-9bfe76b0] .app-navbar-hidden #news-area, .app-navbar-hidden #nexus-gui-popup-background {
     height: 100%;
-    width: 100%;
+    width: 100% !important;
     position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
-    left: 0;
+    left: 0 !important;
 }
 }
 
