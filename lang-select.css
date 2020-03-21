@@ -1,0 +1,27 @@
+@-moz-document domain("duelingnexus.com") {
+#navbar-left {
+    width: 17.5%
+}
+.language-picker__form label {
+    height: 2.2vw;
+    width: 2.2vw;
+    display: inline-block;
+    overflow: hidden;
+}
+.language-picker__form label img {
+    border-width: .1vh;
+    border-style: solid;
+    border-radius: 50%;
+    display: inline-block;
+    height: 2vw;
+    width: 2vw;
+}
+#lang-select {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0;
+    width: 40%;
+}
+option {
+    background-color: #111925
+}
+}
