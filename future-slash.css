@@ -1,7 +1,7 @@
 @-moz-document url-prefix("https://duelingnexus.com/") {
 /*SECTION 1 NONAVBAR*/
 /*This affects the site while the navbar is colapsed.*/
-.app-navbar-hidden #navbar, .app-navbar-hidden #socket-connection, .app-navbar-hidden #login-area {
+.app-navbar-hidden #navbar, .app-navbar-hidden #socket-connection, .app-navbar-hidden #login-area, .app-navbar-hidden #register-area, .app-navbar-hidden #recover-area {
     display: none
 }
 .app-navbar-hidden, .app-navbar-hidden div[data-v-9bfe76b0], .app-navbar-hidden div[data-v-9bfe76b0] .app-navbar-hidden #news-area, .app-navbar-hidden #nexus-gui-popup-background {
