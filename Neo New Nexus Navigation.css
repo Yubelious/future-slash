@@ -149,6 +149,8 @@ a:hover, input:hover, label:hover {
     height: 10vh;
     width: 10vh;
     padding: .5vh;
+    position: absolute;
+    top: 0;
 }
 
 }
