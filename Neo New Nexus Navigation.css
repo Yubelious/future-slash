@@ -231,12 +231,11 @@ a, label, #login-area p, #register-area p, #recover-area p {
     height: 4.5vh;
     width: 4.5vh;
 }
-#logout-button {
+#navbar-right {
     position: fixed;
     top: auto;
-    right: 0;
-    bottom: 0;
-    left: auto;
+    right: 1%;
+    bottom: 1%;
 }
 #login-area h2, #register-area h2, #recover-area h2 {
     font-size: 5vh;
@@ -291,11 +290,7 @@ body {
     margin: 5% 0 0 0
 }
 #logout-button {
-    font-size: 2vw;
-    position: fixed;
-    bottom: 1%;
-    right: 4%;
-    border-width: 0;
+    font-size: 2vw
 }
 #login-area h2, #register-area h2, #recover-area h2 {
     font-size: 3vh;
