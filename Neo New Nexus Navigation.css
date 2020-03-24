@@ -6,29 +6,12 @@ body {
     height: 100vh;
     position: relative;
 }
-#app, #nexus-gui-popup-background {
-    height: 100%;
-    width: 75%;
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 25%;
-}
 form[data-v-9bfe76b0], form[data-v-4068c77b], form input[type="checkbox"] {
     margin: 0;
     padding: 0;
 }
 article button, form div {
     min-height: 0
-}
-#navbar, #login-area[data-v-9bfe76b0], #register-area[data-v-4068c77b], #recover-area[data-v-8098b0b4] {
-    max-height: 100vh;
-    width: 25%;
-    position: fixed;
-    top: 0;
-    margin: 0;
-    left: 0;
 }
 #navbar {
     background-image: linear-gradient(-20deg, #121724, #010711);
@@ -140,6 +123,23 @@ form div {
 /*SECTION 13 COMPUTER*/
 /*This section affects the navbar and login on larger horizontal displays.*/
 @media (min-height: 500px) and (orientation: landscape) {
+#app, #nexus-gui-popup-background {
+    height: 100%;
+    width: 75%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 25%;
+}
+#navbar, #login-area[data-v-9bfe76b0], #register-area[data-v-4068c77b], #recover-area[data-v-8098b0b4] {
+    max-height: 100vh;
+    width: 25%;
+    position: fixed;
+    top: 0;
+    margin: 0;
+    left: 0;
+}
 #navbar button img {
     height: 1.5vw;
     width: 1.5vw;
@@ -196,6 +196,23 @@ a, label, #login-area p, #register-area p, #recover-area p {
 /*SECTION 14 MOBILE*/
 /*This section affects navbar and login on smaller devices that can display either horizontally or vertically.*/
 @media (max-height: 500px) and (orientation: landscape) {
+#app, #nexus-gui-popup-background {
+    height: 100%;
+    width: 80%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 20%;
+}
+#navbar, #login-area[data-v-9bfe76b0], #register-area[data-v-4068c77b], #recover-area[data-v-8098b0b4] {
+    max-height: 100vh;
+    width: 20%;
+    position: fixed;
+    top: 0;
+    margin: 0;
+    left: 0;
+}
 #navbar {
     padding-top: 1%
 }
