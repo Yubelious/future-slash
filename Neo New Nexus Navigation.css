@@ -200,8 +200,11 @@ a, label, #login-area p, #register-area p, #recover-area p {
     padding-top: 1%
 }
 #navbar button img {
-    height: 4vh;
-    width: 4vh;
+    height: 4.5vh;
+    width: 4.5vh;
+}
+#navbar-left, #navbar-right, #socket-connection {
+    display: none
 }
 #navbar-left {
     margin-left: 1.25vw;
@@ -217,15 +220,15 @@ a, label, #login-area p, #register-area p, #recover-area p {
     padding: .25vw
 }
 #navbar-middle {
-    transform: scale(.8) translateY(-4vw)
+    transform: scale(.75) translateY(-5vw)
 }
 #navbar-middle button, input[type="email"], form input[type="email"], form input[type="password"], form input[type="text"], form button {
-    font-size: 3vh
+    font-size: 3.5vh
 }
 #navbar-middle button {
     letter-spacing: .1vw;
-    margin: 1.5% 0 0 0;
-    border-width: 1.2px;
+    margin: 2.5% 0 0 0;
+    border-width: 1.333px;
 }
 #navbar-right {
     height: 100vh
