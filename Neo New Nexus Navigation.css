@@ -44,6 +44,11 @@ article button, form div {
     position: fixed;
     left: 0;
 }
+#navbar-left:before {
+    content: 'JOIN US ON';
+    text-align: left;
+    display: block;
+}
 #navbar-left button {
     font-size: 0;
     background-color: #020813;
@@ -56,11 +61,6 @@ article button, form div {
 }
 #navbar-left br, #navbar-middle br {
     display: none
-}
-#navbar-left:before {
-    content: 'JOIN US ON';
-    text-align: left;
-    display: block;
 }
 #navbar-middle, #navbar-right button {
     margin: 0
@@ -199,22 +199,22 @@ a, label, #login-area p, #register-area p, #recover-area p {
 #navbar {
     padding-top: 1%
 }
-#navbar button img {
-    height: 4.5vh;
-    width: 4.5vh;
-}
-#navbar-left, #navbar-right, #socket-connection {
+#navbar-right, #socket-connection {
     display: none
 }
 #navbar-left {
     margin-left: 1.25vw;
-    top: 75%;
+    top: 80%;
 }
 #navbar-left:before {
     padding-bottom: 2.5%
 }
 #navbar-left button {
     margin: 0 1.25vw 0 0
+}
+#navbar-left button img {
+    height: 3.375vh;
+    width: 3.375vh;
 }
 #navbar-left button img, #navbar #logout-button, #navbar #logout-button img {
     padding: .25vw
@@ -229,6 +229,10 @@ a, label, #login-area p, #register-area p, #recover-area p {
     letter-spacing: .1vw;
     margin: 4.5% 0 0 0;
     border-width: 1.333px;
+}
+#navbar-middle button img {
+    height: 4.5vh;
+    width: 4.5vh;
 }
 #navbar-right {
     height: 100vh
