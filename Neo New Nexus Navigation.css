@@ -212,7 +212,7 @@ a, label, #login-area p, #register-area p, #recover-area p {
 #navbar-left button {
     margin: 0 1.25vw 0 0
 }
-#navbar-left button img, #logout-button img {
+#navbar-left button img, #navbar-right #logout-button img {
     height: 3.375vh;
     width: 3.375vh;
 }
@@ -240,9 +240,6 @@ a, label, #login-area p, #register-area p, #recover-area p {
     right: 0;
     bottom: 0;
     left: auto;
-}
-#navbar #logout-button img {
-    padding: 0 .75vw;
 }
 #login-area h2, #register-area h2, #recover-area h2 {
     font-size: 5vh;
