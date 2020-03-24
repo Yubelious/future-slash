@@ -1,3 +1,198 @@
+@-moz-document domain("duelingnexus.com") {
+/*SECTION 12 NAVBAR*/
+/*This section affects the navbar and login regardless of the device you're using.*/
+body {
+    margin: 0;
+    height: 100vh;
+    position: relative;
+}
+#app, #nexus-gui-popup-background {
+    height: 100%;
+    width: 75%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 25%;
+}
+form[data-v-9bfe76b0], form[data-v-4068c77b], form input[type="checkbox"] {
+    margin: 0;
+    padding: 0;
+}
+article button, form div {
+    min-height: 0
+}
+#navbar, #login-area[data-v-9bfe76b0], #register-area[data-v-4068c77b], #recover-area[data-v-8098b0b4] {
+    max-height: 100vh;
+    width: 25%;
+    position: fixed;
+    top: 0;
+    margin: 0;
+    left: 0;
+}
+#navbar {
+    background-image: linear-gradient(-20deg, #121724, #010711);
+    border-width: 0 1px 0 0;
+    border-style: solid;
+    border-color: #595e67;
+    height: 100%;
+    padding-top: 2%;
+}
+#navbar-left {
+    height: 25%;
+    width: 25%;
+    position: fixed;
+    left: 0;
+}
+#navbar-left button {
+    font-size: 0;
+    background-color: #020813;
+    border-color: #595e67;
+    border-width: 1px;
+    float: left;
+    padding: .5vh;
+    min-height: 0;
+    min-width: 0;
+}
+#navbar-left br, #navbar-middle br {
+    display: none
+}
+#navbar-left:before {
+    content: 'JOIN US ON';
+    text-align: left;
+    display: block;
+}
+#navbar-middle, #navbar-right button {
+    margin: 0
+}
+#navbar-middle:before {
+    content: url('https://i.imgur.com/s5Fi8nR.png')
+}
+#navbar-middle button, #navbar-right button {
+    text-align: left;
+    vertical-align: middle;
+    min-height: 0;
+}
+#navbar-middle button {
+    text-transform: uppercase;
+    border-width: 1px;
+    padding: 3% 3% 3% 6%;
+}
+/*#navbar-middle > button:nth-of-type(1) {
+    display: none
+}*/
+#navbar-middle button, form button, form input[type="text"], form input[type="password"], form input[type="email"] {
+    width: 80%
+}
+#navbar-middle button img, #navbar-right button img {
+    float: right
+}
+#navbar #logout-button {
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0;
+}
+#login-area[data-v-9bfe76b0], #register-area[data-v-4068c77b], #recover-area[data-v-8098b0b4] {
+    background-color: rgba(0, 0, 0, 0);
+    border-width: 0;
+}
+#navbar-middle button, form button, form input[type="text"], form input[type="password"], form input[type="email"] {
+    color: white;
+    background-color: #111925;
+}
+form button, form input[type="text"], form input[type="password"], form input[type="email"] {
+    padding: 0
+}
+#navbar button:hover, form button:hover {
+    background-color: #4f1158 !important;
+    border-color: #84598b;
+}
+form div {
+    padding: 1% 0 0 0
+}
+#socket-connection {
+    line-height: 1.5;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 0;
+    height: 3vh;
+    width: auto;
+    min-width: 0;
+    z-index: 3;
+    position: fixed;
+}
+#togglenavbar {
+	font-size: 5vh;
+	color: white;
+    background-color: #020813;
+    border-color: #595e67;
+    border-width: 1px;
+    border-bottom-right-radius: 20%;
+    height: 10vh;
+    width: 10vh;
+    padding: .5vh;
+    position: absolute;
+    top: 0;
+}
+
+}
+
+@-moz-document domain("duelingnexus.com") {
+/*SECTION 13 COMPUTER*/
+/*This section affects the navbar and login on larger horizontal displays.*/
+@media (min-height: 500px) and (orientation: landscape) {
+#navbar button img {
+    height: 1.5vw;
+    width: 1.5vw;
+}
+#navbar-left {
+    margin-left: 1.5vw;
+    top: 72%;
+}
+#navbar-left:before {
+    padding-bottom: 5%
+}
+#navbar-left button {
+    margin: 0 1.5vw 0 0
+}
+#navbar-left button img {
+    padding: .5vw
+}
+#navbar-middle button, #navbar-right button, input {
+    font-size: 1.25vw
+}
+#navbar-middle button {
+    margin: 3.5% 0 0 0;
+    letter-spacing: .2vw;
+}
+#navbar #logout-button img {
+    padding: 0 .75vw;
+}
+#logout-button {
+    position: fixed;
+    top: 0;
+    right: 0;
+    border-width: 0;
+}
+#login-area h2, #register-area h2, #recover-area h2 {
+    font-size: 3vh;
+    margin: 2vh 0 3vh 0;
+}
+input[type="email"], form input[type="email"], form input[type="password"], form input[type="text"], form button {
+    text-indent: 0.5vw;
+    height: 2.5vw;
+}
+#socket-connection {
+    top: auto;
+    bottom: 6%;
+    left: 1.5vw;
+}
+a, label, #login-area p, #register-area p, #recover-area p {
+    font-size: 2vh
+}
+}
+}
+
+@-moz-document domain("duelingnexus.com") {
 /*SECTION 14 MOBILE*/
 /*This section affects navbar and login on smaller devices that can display either horizontally or vertically.*/
 @media (max-height: 500px) and (orientation: landscape) {
@@ -125,5 +320,112 @@ div#app {
 }
 article {
     z-index: 1;
+}
+}
+}
+
+@-moz-document url-prefix("https://duelingnexus.com/login"), url-prefix("https://duelingnexus.com/register"), url-prefix("https://duelingnexus.com/recover") {
+/*SECTION 15 LOGIN*/
+/*This affects the navbar area while logged out. This smooths out the login animation.*/
+#navbar-middle button, #navbar-right {
+    display: none
+}
+#links-area[data-v-9bfe76b0], #links-area[data-v-4068c77b], #links-area[data-v-8098b0b4] {
+    border-top: 0;
+    margin: 0;
+    padding: 0;
+}
+form button {
+    font-weight: bold;
+    text-align: center;
+}
+}
+
+@-moz-document url("https://duelingnexus.com/login") {
+/*SECTION 16 CHECKBOX*/
+/*This is the custom CSS checkbox on the login page.*/
+form input[type="checkbox"] {
+    margin: 0
+}
+#login-area[data-v-9bfe76b0] .input-checkbox-group {
+    text-align: left;
+    text-indent: 6vh;
+    width: 90%;
+    position: relative;
+    left: 10%;
+}
+#login-area[data-v-9bfe76b0] .input-checkbox-group input {
+    opacity: 0;
+    z-index: 1;
+    float: right;
+}
+#login-area[data-v-9bfe76b0] .input-checkbox-group label:before {
+    content: " ";
+    background-color: #111925;
+    border: 1px solid #595e67;
+    z-index: 2;
+    display: block;
+    position: fixed;
+}
+#login-area[data-v-9bfe76b0] .input-checkbox-group label:hover:before {
+    border-color: #8518c3
+}
+label[data-v-9bfe76b0]:after {
+    content: " ";
+    position: absolute;
+    display: none;
+}
+.input-checkbox-group input:checked ~ label[data-v-9bfe76b0]:after {
+    display: block
+}
+.input-checkbox-group label[data-v-9bfe76b0]:after {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    border: solid #8518c3;
+    border-width: 0 1px 1px 0;
+    z-index: 3;
+}
+
+@media (min-height: 500px) and (orientation: landscape) {
+label[data-v-9bfe76b0]:before {
+    height: 2.75vh;
+    width: 2.75vh;
+    margin-left: .5vw;
+}
+.input-checkbox-group label[data-v-9bfe76b0]:after {
+    height: 1.5vh;
+    width: .75vh;
+    top: 1vh;
+    left: 5.25%;
+}
+
+}
+@media (max-height: 500px) {
+label[data-v-9bfe76b0]:before {
+    height: 2vh;
+    width: 2vh;
+    margin-left: .5%;
+}
+.input-checkbox-group label[data-v-9bfe76b0]:after {
+    height: 1.5vh;
+    width: .75vh;
+    top: 1vh;
+    left: 3.5%;
+}
+}
+
+@media (orientation: portrait) {
+label:before {
+    height: 2.5vh;
+    width: 2.5vh;
+    margin-left: .5vw;
+}
+.input-checkbox-group label:after {
+    height: 1.5vh;
+    width: .75vh;
+    top: 1.25vw;
+    left: 2.1%;
+}
 }
 }
