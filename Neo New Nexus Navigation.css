@@ -223,7 +223,8 @@ a, label, #login-area p, #register-area p, #recover-area p {
     font-size: 3vh
 }
 #navbar-middle button {
-    margin: 1.5% 0 0 0
+    margin: 1.5% 0 0 0;
+    border-width: 1.333px 1px;
 }
 #navbar-right {
     height: 100vh
