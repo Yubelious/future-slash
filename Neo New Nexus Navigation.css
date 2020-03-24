@@ -161,7 +161,8 @@ form div {
     font-size: 1.25vw
 }
 #navbar-middle button {
-    margin: 3.5% 0 0 0
+    margin: 3.5% 0 0 0;
+    letter-spacing: .2vw;
 }
 #navbar #logout-button img {
     padding: 0 .75vw;
