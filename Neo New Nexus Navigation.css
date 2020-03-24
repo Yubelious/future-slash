@@ -276,9 +276,13 @@ a, label, #login-area p, #register-area p, #recover-area p {
 body {
     font-size: 2.5vh
 }
+article {
+    z-index: 1
+}
 #login-area[data-v-9bfe76b0], #register-area[data-v-4068c77b], #recover-area[data-v-8098b0b4], #navbar, #navbar-left {
     width: 100vw;
     z-index: 2;
+    position: fixed;
 }
 #navbar button img {
     height: 4vh;
