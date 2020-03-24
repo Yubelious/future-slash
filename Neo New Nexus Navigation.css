@@ -203,8 +203,8 @@ a, label, #login-area p, #register-area p, #recover-area p {
     display: none
 }
 #navbar-left {
-    margin-left: 1.25vw;
-    top: 80%;
+    margin-left: 5%;
+    top: 78%;
 }
 #navbar-left:before {
     padding-bottom: 2.5%
