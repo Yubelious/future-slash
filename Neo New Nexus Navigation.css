@@ -241,6 +241,7 @@ a, label, #login-area p, #register-area p, #recover-area p {
 }
 #navbar-middle button {
     letter-spacing: .1vw;
+    width: 95%;
     margin: 4.5% 0 0 0;
     border-width: 1.333px;
 }
