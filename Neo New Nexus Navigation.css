@@ -293,8 +293,8 @@ body {
 #logout-button {
     font-size: 2vw;
     position: fixed;
-    top: 0;
-    right: 1%;
+    bottom: 1%;
+    right: 4%;
     border-width: 0;
 }
 #login-area h2, #register-area h2, #recover-area h2 {
