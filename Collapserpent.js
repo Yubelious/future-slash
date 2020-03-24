@@ -1,4 +1,6 @@
 // ==UserScript==
+
+=======
 // @name         Collapserpent
 // @namespace    https://duelingnexus.com/
 // @version      1.0
