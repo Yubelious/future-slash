@@ -1,4 +1,4 @@
 Patch Notes
-v1.3: Prepared the css for the colapsing navbar and the language select.
+v1.3: Prepared the css for the colapsing navbar and the language select, worked more on the editor page, moved some stuff around, removed the background colour from input:hover, and set the borders to 1px.
 v1.2: Rewrote the Duel Zone article, added borders to buttons, added a custom checkbox to the gamelist filters, added a scrollbar to the gamelist, wrote a grid for the custom game creator, added scrolling to decks list, shaped fake buttons, and redid the login animation so it works when clicking that stupid home button from anywhere.
 v1.1: Changed default font size back to the previous .9em, put the home button back where it belongs so people can waste 3 seconds of their life every time they misclick it, moved the connection socket under the navbar-left, fixed a bug with the logout button, recoloured some stuff, moved the news article down so it doesn't cover the ad, and added code to the editor pages (as well as its related siding counterparts).
