@@ -1,5 +1,7 @@
 // ==UserScript==
-// @name         Collapserpent the navbar
+
+=======
+// @name         Collapserpent
 // @namespace    https://duelingnexus.com/
 // @version      1.0
 // @description  Toggle the navbar on and off with a button
