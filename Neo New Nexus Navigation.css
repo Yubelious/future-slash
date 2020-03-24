@@ -199,9 +199,6 @@ a, label, #login-area p, #register-area p, #recover-area p {
 #navbar {
     padding-top: 1%
 }
-#socket-connection {
-    display: none
-}
 #navbar-left {
     margin-left: 5%;
     top: 78%;
@@ -251,8 +248,8 @@ input[type="email"], form input[type="email"], form input[type="password"], form
 }
 #socket-connection {
     top: auto;
-    bottom: 7%;
-    left: 1.25vw;
+    bottom: 2%;
+    left: 25.2%;
 }
 a, label, #login-area p, #register-area p, #recover-area p {
     font-size: 3vh
