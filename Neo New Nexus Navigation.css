@@ -216,6 +216,9 @@ a, label, #login-area p, #register-area p, #recover-area p {
 #navbar-left button img, #navbar #logout-button, #navbar #logout-button img {
     padding: .25vw
 }
+#navbar-middle {
+    transform: scaleY(.75) translateY(-5vw)
+}
 #navbar-middle button, input[type="email"], form input[type="email"], form input[type="password"], form input[type="text"], form button {
     font-size: 3vh
 }
