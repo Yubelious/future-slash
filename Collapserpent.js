@@ -1,11 +1,13 @@
 // ==UserScript==
-// @name         Colapse the navbar
+// @name         Collapserpent the navbar
 // @namespace    https://duelingnexus.com/
 // @version      1.0
 // @description  Toggle the navbar on and off with a button
 // @author       Yubelious!
 // @grant        none
 // @include      https://duelingnexus.com/*
+// @updateURL   https://raw.githubusercontent.com/Yubelious/future-slash/master/Collapserpent.js
+// @downloadURL https://raw.githubusercontent.com/Yubelious/future-slash/master/Collapserpent.js
 // ==/UserScript==
 
 document.body.onload = addElement;
