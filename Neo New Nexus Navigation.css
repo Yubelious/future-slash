@@ -199,7 +199,7 @@ a, label, #login-area p, #register-area p, #recover-area p {
 #navbar {
     padding-top: 1%
 }
-#navbar-right, #socket-connection {
+#socket-connection {
     display: none
 }
 #navbar-left {
@@ -212,7 +212,7 @@ a, label, #login-area p, #register-area p, #recover-area p {
 #navbar-left button {
     margin: 0 1.25vw 0 0
 }
-#navbar-left button img {
+#navbar-left button img, #logout-button img {
     height: 3.375vh;
     width: 3.375vh;
 }
@@ -234,16 +234,15 @@ a, label, #login-area p, #register-area p, #recover-area p {
     height: 4.5vh;
     width: 4.5vh;
 }
-#navbar-right {
-    height: 100vh
-}
 #logout-button {
-    font-size: 0;
-    position: absolute;
+    position: fixed;
     top: auto;
-    right: 10%;
-    bottom: 13.5%;
+    right: 0;
+    bottom: 0;
     left: auto;
+}
+#navbar #logout-button img {
+    padding: 0 .75vw;
 }
 #login-area h2, #register-area h2, #recover-area h2 {
     font-size: 5vh;
@@ -296,9 +295,6 @@ body {
 }
 #navbar-middle button {
     margin: 5% 0 0 0
-}
-#navbar #logout-button img {
-    padding: 0 .75vw;
 }
 #logout-button {
     position: fixed;
