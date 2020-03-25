@@ -271,6 +271,9 @@ input[type="email"], form input[type="email"], form input[type="password"], form
 a, label, #login-area p, #register-area p, #recover-area p {
     font-size: 2vh
 }
+form div {
+    margin: 0
+}
 }
 
 @media (orientation: portrait) {
