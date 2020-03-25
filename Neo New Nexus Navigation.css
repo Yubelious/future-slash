@@ -311,6 +311,11 @@ article {
 #navbar-middle button {
     margin: 5% 0 0 0
 }
+#navbar-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
 #logout-button {
     font-size: 2vw
 }
