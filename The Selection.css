@@ -1,7 +1,3 @@
-body {
-	background-color: black;
-    width: 25vw;
-}
 .language-picker {
     text-align: right
 }
@@ -18,10 +14,10 @@ body {
     margin-right: 9%;
 }
 /*Flags*/
-.de #british-flag, .de #bandera-española, .de #drapeau-français, .de #bandiera-italiana, .de #hangug-guggi, .de #bandeira-portuguesa, .de #Zhōngguó-guóqí, .en #deutsche-flagge, .en #bandera-española, .en #drapeau-français, .en #bandiera-italiana, .en #hangug-guggi, .en #bandeira-portuguesa, .en #Zhōngguó-guóqí, .es #deutsche-flagge, .es #british-flag, .es #drapeau-français, .es #bandiera-italiana, .es #hangug-guggi, .es #bandeira-portuguesa, .es #Zhōngguó-guóqí, .fr #deutsche-flagge, .fr #british-flag, .fr #bandera-española, .fr #bandiera-italiana, .fr #hangug-guggi, .fr #bandeira-portuguesa, .fr #Zhōngguó-guóqí, .it #deutsche-flagge, .it #british-flag, .it #bandera-española, .it #drapeau-français, .it #hangug-guggi, .it #bandeira-portuguesa, .it #Zhōngguó-guóqí, .ko #deutsche-flagge, .ko #british-flag, .ko #bandera-española, .ko #drapeau-français, .ko #bandiera-italiana, .ko #bandeira-portuguesa, .ko #Zhōngguó-guóqí, .pt #deutsche-flagge, .pt #british-flag, .pt #bandera-española, .pt #drapeau-français, .pt #bandiera-italiana, .pt #hangug-guggi, .pt #Zhōngguó-guóq, .zh #deutsche-flagge, .zh #british-flag, .zh #bandera-española, .zh #drapeau-français, .zh #bandiera-italiana, .zh #hangug-guggi, .zh #bandeira-portuguesa {
+.de #british-flag, .de #bandera-española, .de #drapeau-français, .de #bandiera-italiana, .de #hangug-guggi, .de #bandeira-portuguesa, .de #zhōngguó-guóqí, .en #deutsche-flagge, .en #bandera-española, .en #drapeau-français, .en #bandiera-italiana, .en #hangug-guggi, .en #bandeira-portuguesa, .en #zhōngguó-guóqí, .es #deutsche-flagge, .es #british-flag, .es #drapeau-français, .es #bandiera-italiana, .es #hangug-guggi, .es #bandeira-portuguesa, .es #Zhōngguó-guóqí, .fr #deutsche-flagge, .fr #british-flag, .fr #bandera-española, .fr #bandiera-italiana, .fr #hangug-guggi, .fr #bandeira-portuguesa, .fr #zhōngguó-guóqí, .it #deutsche-flagge, .it #british-flag, .it #bandera-española, .it #drapeau-français, .it #hangug-guggi, .it #bandeira-portuguesa, .it #zhōngguó-guóqí, .ko #deutsche-flagge, .ko #british-flag, .ko #bandera-española, .ko #drapeau-français, .ko #bandiera-italiana, .ko #bandeira-portuguesa, .ko #zhōngguó-guóqí, .pt #deutsche-flagge, .pt #british-flag, .pt #bandera-española, .pt #drapeau-français, .pt #bandiera-italiana, .pt #hangug-guggi, .pt #zhōngguó-guóqí-guóqi, .zh #deutsche-flagge, .zh #british-flag, .zh #bandera-española, .zh #drapeau-français, .zh #bandiera-italiana, .zh #hangug-guggi, .zh #bandeira-portuguesa {
 	display: none
 }
-.de #deutsche-flagge, .en #british-flag, .es #bandera-española, .fr #drapeau-français, .it #bandiera-italiana, .ko #hangug-guggi, .pt #bandeira-portuguesa, .zh #Zhōngguó-guóqí {
+.de #deutsche-flagge, .en #british-flag, .es #bandera-española, .fr #drapeau-français, .it #bandiera-italiana, .ko #hangug-guggi, .pt #bandeira-portuguesa, .zh #zhōngguó-guóqí {
 	border: 1px solid white;
     border-radius: 50%;
 	height: 2.5vw;
@@ -217,7 +213,7 @@ body {
     top: 25%;
     left: 10%;
 }
-.zh #Zhōngguó-guóqí {
+.zh #zhōngguó-guóqí {
 	background-color: red
 }
 .zh #big-star, .zh .little-star {
