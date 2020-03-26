@@ -1,8 +1,4 @@
-/*just so you can see the white text*/
-body {
-  background-color: black
-}
-/*The actual CSS*/
+@-moz-document url("https://duelingnexus.com/login") {
 .language-picker {
   text-align: right
 }
@@ -17,14 +13,10 @@ body {
 .language-picker option {
   background-color: #111925
 }
-select ~ label {
-  opacity: .9
-}
-select:hover ~ label {
+.language-picker:hover label {
   opacity: 1
 }
 .language-picker label {
-    opacity: 1;
   display: inline-block;
   width: 2.5vw;
   z-index: 1;
@@ -316,4 +308,5 @@ select:hover ~ label {
 	transform: rotate(25deg);
 	top: 52%;
 	left: 52%;
+}
 }
