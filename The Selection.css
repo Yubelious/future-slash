@@ -2,17 +2,30 @@ body {
 	background-color: black;
     width: 25vw;
 }
-#language-picker {
-	position: relative
+.language-picker {
+    text-align: right
 }
+#lang-select {
+    opacity: 0;
+    width: 35%;
+}
+.language-picker option {
+    background-color: #111925
+}
+.language-picker label {
+    display: inline-block;
+    width: 2.5vw;
+    margin-right: 9%;
+}
+/*Flags*/
 .de #british-flag, .de #bandera-española, .de #drapeau-français, .de #bandiera-italiana, .de #hangug-guggi, .de #bandeira-portuguesa, .de #Zhōngguó-guóqí, .en #deutsche-flagge, .en #bandera-española, .en #drapeau-français, .en #bandiera-italiana, .en #hangug-guggi, .en #bandeira-portuguesa, .en #Zhōngguó-guóqí, .es #deutsche-flagge, .es #british-flag, .es #drapeau-français, .es #bandiera-italiana, .es #hangug-guggi, .es #bandeira-portuguesa, .es #Zhōngguó-guóqí, .fr #deutsche-flagge, .fr #british-flag, .fr #bandera-española, .fr #bandiera-italiana, .fr #hangug-guggi, .fr #bandeira-portuguesa, .fr #Zhōngguó-guóqí, .it #deutsche-flagge, .it #british-flag, .it #bandera-española, .it #drapeau-français, .it #hangug-guggi, .it #bandeira-portuguesa, .it #Zhōngguó-guóqí, .ko #deutsche-flagge, .ko #british-flag, .ko #bandera-española, .ko #drapeau-français, .ko #bandiera-italiana, .ko #bandeira-portuguesa, .ko #Zhōngguó-guóqí, .pt #deutsche-flagge, .pt #british-flag, .pt #bandera-española, .pt #drapeau-français, .pt #bandiera-italiana, .pt #hangug-guggi, .pt #Zhōngguó-guóq, .zh #deutsche-flagge, .zh #british-flag, .zh #bandera-española, .zh #drapeau-français, .zh #bandiera-italiana, .zh #hangug-guggi, .zh #bandeira-portuguesa {
 	display: none
 }
 .de #deutsche-flagge, .en #british-flag, .es #bandera-española, .fr #drapeau-français, .it #bandiera-italiana, .ko #hangug-guggi, .pt #bandeira-portuguesa, .zh #Zhōngguó-guóqí {
 	border: 1px solid white;
     border-radius: 50%;
-	height: 5vw;
-	width: 5vw;
+	height: 2.5vw;
+	width: 2.5vw;
     display: block;
     overflow: hidden;
     z-index: 2;
@@ -139,7 +152,7 @@ body {
     border-radius: 50%;
 	height: 50%;
     width: 50%;
-    oveflow: hidden;
+    overflow: hidden;
     display: block;
     z-index: 3;
     top: 25%;
@@ -212,12 +225,12 @@ body {
     position: absolute;
 }
 .zh #big-star {
-	font-size: 2vw;
+	font-size: 1vw;
     top: 10%;
     left: 15%;
 }
 .zh .little-star {
-	font-size: .625vw
+	font-size: .3125vw
 }
 .zh #star1 {
 	transform: rotate(20deg);
@@ -238,17 +251,4 @@ body {
 	transform: rotate(25deg);
 	top: 52%;
 	left: 52%;
-}
-#lang-select, select option {
-	font-size: 2.5vw;
-    color: white;
-    width: 14%;
-}
-#lang-select {
-    background-color: rgba(0, 0, 0, 0);
-    border-width: 0;
-    position: absolute;
-}
-option {
-    background-color: #111925
 }
