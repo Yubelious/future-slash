@@ -1,14 +1,13 @@
-#arrow {
-  position: absolute;
-  right: 4vw;
-}
+/*background color to test white text*/
+/*body {
+  background-color: black
+}*/
+/*The actual CSS*/
 .language-picker {
-  text-align: right
+  text-align: right;
+    position: relative;
 }
 .language-picker label {
-  font-size: 1.5vw;
-    line-height: 1.8;
-  color: white;
 	height: 2.5vw;
 	width: 15vw;
   z-index: 1;  
@@ -35,6 +34,16 @@
   z-index: 2;
   position: relative;
     right: 5%;
+}
+#arrow {
+  font-size: 1.5vw;
+    line-height: 1.8;
+  color: white;
+	height: 2.5vw;
+	width: 15vw;
+  display: block;
+  position: absolute;
+  right: 4vw;
 }
 #arrow::after {
   margin-left: 1vw
