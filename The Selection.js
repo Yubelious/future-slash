@@ -1,4 +1,10 @@
-
+    var langclass = "en";
+    $( document ).ready(function() {
+        console.log("ready");
+        $('#lang-select').change(function(){
+            document.getElementById("flags").className = $("#lang-select").val();
+        });
+    });
 const langSelect = $("#lang-select");
 $(document).ready(function() {
 	console.log("ready");
