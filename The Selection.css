@@ -1,6 +1,32 @@
-@-moz-document url("https://duelingnexus.com/login") {
+#arrow {
+  position: absolute;
+  right: 4vw;
+}
 .language-picker {
   text-align: right
+}
+.language-picker label {
+  font-size: 1.5vw;
+    line-height: 1.8;
+  color: white;
+	height: 2.5vw;
+	width: 15vw;
+  z-index: 1;  
+  position: absolute;
+  right: 9%;
+}
+.language-picker option {
+  background-color: #111925
+}
+.language-picker:hover label {
+  opacity: 1
+}
+.language-picker label #flags {
+  display: inline-block;
+  width: 2.5vw;
+  z-index: 1;
+  position: absolute;
+  right: 0;
 }
 #lang-select {
     opacity: 0;
@@ -10,60 +36,33 @@
   position: relative;
     right: 5%;
 }
-.language-picker option {
-  background-color: #111925
+#arrow::after {
+  margin-left: 1vw
 }
-.language-picker:hover label {
-  opacity: 1
+
+.de #arrow::after {
+  content: "Deutsch"
 }
-.language-picker label {
-  display: inline-block;
-  width: 2.5vw;
-  z-index: 1;
-  position: absolute;
-  right: 9%;
+.en #arrow::after {
+  content: "English"
 }
-#flags {
-	height: 2.5vw;
-	width: 15vw;
-  float: right;
-  position: absolute;
-  right: 0;
+.es #arrow::after{
+  content: "Español"
 }
-#flags::before {
-  font-size: 1.5vw;
-    line-height: 1.8;
-  color: white;
-	height: 2.5vw;
-	width: 15vw;
-  display: block;
-  position: absolute;
-  right: 4vw;
-  
+.fr #arrow::after {
+  content: "Français"
 }
-.de#flags::before {
-  content: "⮛ Deutsch"
+.it #arrow::after {
+  content: "Italiano"
 }
-.en#flags::before {
-  content: "⮛ English"
+.ko #arrow::after {
+  content: "한국어"
 }
-.es#flags::before{
-  content: "⮛ Español"
+.pt #arrow::after {
+  content: "Português"
 }
-.fr#flags::before {
-  content: "⮛ Français"
-}
-.it#flags::before {
-  content: "⮛ Italiano"
-}
-.ko#flags::before {
-  content: "⮛ 한국어"
-}
-.pt#flags::before {
-  content: "⮛ Português"
-}
-.zh#flags::before {
-  content: "⮛ 中文"
+.zh #arrow::after {
+  content: "中文"
 }
 .de #british-flag, .de #bandera-española, .de #drapeau-français, .de #bandiera-italiana, .de #hangug-guggi, .de #bandeira-portuguesa, .de #zhōngguó-guóqí, .en #deutsche-flagge, .en #bandera-española, .en #drapeau-français, .en #bandiera-italiana, .en #hangug-guggi, .en #bandeira-portuguesa, .en #zhōngguó-guóqí, .es #deutsche-flagge, .es #british-flag, .es #drapeau-français, .es #bandiera-italiana, .es #hangug-guggi, .es #bandeira-portuguesa, .es #zhōngguó-guóqí, .fr #deutsche-flagge, .fr #british-flag, .fr #bandera-española, .fr #bandiera-italiana, .fr #hangug-guggi, .fr #bandeira-portuguesa, .fr #zhōngguó-guóqí, .it #deutsche-flagge, .it #british-flag, .it #bandera-española, .it #drapeau-français, .it #hangug-guggi, .it #bandeira-portuguesa, .it #zhōngguó-guóqí, .ko #deutsche-flagge, .ko #british-flag, .ko #bandera-española, .ko #drapeau-français, .ko #bandiera-italiana, .ko #bandeira-portuguesa, .ko #zhōngguó-guóqí, .pt #deutsche-flagge, .pt #british-flag, .pt #bandera-española, .pt #drapeau-français, .pt #bandiera-italiana, .pt #hangug-guggi, .pt #zhōngguó-guóqí, .zh #deutsche-flagge, .zh #british-flag, .zh #bandera-española, .zh #drapeau-français, .zh #bandiera-italiana, .zh #hangug-guggi, .zh #bandeira-portuguesa {
 	display: none
@@ -308,5 +307,4 @@
 	transform: rotate(25deg);
 	top: 52%;
 	left: 52%;
-}
 }
