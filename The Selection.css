@@ -295,25 +295,25 @@
   left: 15%;
 }
 .zh .little-star {
-	font-size: .3125vw
+	font-size: .333vw
 }
 .zh #star1 {
 	transform: rotate(20deg);
-	top: 12%;
-	left: 52%;
+	top: 10%;
+	left: 50%;
 }
 .zh #star2 {
 	transform: rotate(55deg);
-	top: 25%;
+	top: 23%;
 	left: 60%;
 }
 .zh #star3 {
 	transform: rotate(5deg);
-	top: 39%;
+	top: 37%;
 	left: 60%;
 }
 .zh #star4 {
 	transform: rotate(25deg);
-	top: 52%;
+	top: 50%;
 	left: 52%;
 }
