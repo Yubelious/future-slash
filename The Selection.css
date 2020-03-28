@@ -1,0 +1,321 @@
+@-moz-document url("https://duelingnexus.com/login") {
+/*background color to test white text*/
+/*body {
+  background-color: black
+}*/
+/*The actual CSS*/
+.language-picker {
+  text-align: right;
+    position: relative;
+}
+.language-picker label {
+	height: 2.5vw;
+	width: 15vw;
+  z-index: 1;  
+  position: absolute;
+  right: 9%;
+}
+.language-picker option {
+  background-color: #111925
+}
+.language-picker:hover label {
+  opacity: 1
+}
+.language-picker label #flags {
+  display: inline-block;
+  width: 2.5vw;
+  z-index: 1;
+  position: absolute;
+  right: 0;
+}
+#lang-select {
+    opacity: 0;
+	height: 2.75vw;
+  width: 50%;
+  z-index: 2;
+  position: relative;
+    right: 5%;
+}
+#arrow {
+  font-size: 1.5vw;
+    line-height: 1.8;
+  color: white;
+	height: 2.5vw;
+	width: 15vw;
+  display: block;
+  position: absolute;
+  right: 4vw;
+}
+#arrow::after {
+  margin-left: 1vw
+}
+
+.de #arrow::after {
+  content: "Deutsch"
+}
+.en #arrow::after {
+  content: "English"
+}
+.es #arrow::after{
+  content: "Español"
+}
+.fr #arrow::after {
+  content: "Français"
+}
+.it #arrow::after {
+  content: "Italiano"
+}
+.ko #arrow::after {
+  content: "한국어"
+}
+.pt #arrow::after {
+  content: "Português"
+}
+.zh #arrow::after {
+  content: "中文"
+}
+.de #british-flag, .de #bandera-española, .de #drapeau-français, .de #bandiera-italiana, .de #hangug-guggi, .de #bandeira-portuguesa, .de #zhōngguó-guóqí, .en #deutsche-flagge, .en #bandera-española, .en #drapeau-français, .en #bandiera-italiana, .en #hangug-guggi, .en #bandeira-portuguesa, .en #zhōngguó-guóqí, .es #deutsche-flagge, .es #british-flag, .es #drapeau-français, .es #bandiera-italiana, .es #hangug-guggi, .es #bandeira-portuguesa, .es #zhōngguó-guóqí, .fr #deutsche-flagge, .fr #british-flag, .fr #bandera-española, .fr #bandiera-italiana, .fr #hangug-guggi, .fr #bandeira-portuguesa, .fr #zhōngguó-guóqí, .it #deutsche-flagge, .it #british-flag, .it #bandera-española, .it #drapeau-français, .it #hangug-guggi, .it #bandeira-portuguesa, .it #zhōngguó-guóqí, .ko #deutsche-flagge, .ko #british-flag, .ko #bandera-española, .ko #drapeau-français, .ko #bandiera-italiana, .ko #bandeira-portuguesa, .ko #zhōngguó-guóqí, .pt #deutsche-flagge, .pt #british-flag, .pt #bandera-española, .pt #drapeau-français, .pt #bandiera-italiana, .pt #hangug-guggi, .pt #zhōngguó-guóqí, .zh #deutsche-flagge, .zh #british-flag, .zh #bandera-española, .zh #drapeau-français, .zh #bandiera-italiana, .zh #hangug-guggi, .zh #bandeira-portuguesa {
+	display: none
+}
+.de #deutsche-flagge, .en #british-flag, .es #bandera-española, .fr #drapeau-français, .it #bandiera-italiana, .ko #hangug-guggi, .pt #bandeira-portuguesa, .zh #zhōngguó-guóqí {
+	border: 1px solid white;
+  border-radius: 50%;
+	height: 2.5vw;
+	width: 2.5vw;
+  display: block;
+  overflow: hidden;
+  float: right;
+  z-index: 2;
+  position: relative;
+}
+.de #flags::before {
+  content: "DEUTSHCHE";
+  font-size: 2vw;
+  color: gray;
+  background-color: black;
+	height: 2.5vw;
+	width: 5vw;
+  display: block;
+  position: fixed;
+  right: 12vw;
+}
+.de #deutch1, .de #deutch2, .de #deutch3, .es #española1, .es #española2, .es #española3 {
+	height: 33.4%;
+  width: 100%;
+  position: absolute;
+}
+.fr #français1, .fr #français2, .fr #français3, .it #italiana1, .it #italiana2, .it #italiana3 {
+	height: 100%;
+  width: 33.4%;
+  position: absolute;
+}
+.de #deutch1 {
+  background-color: black
+}
+.de #deutch2 {
+	background-color: red;
+  top: 33.3%;
+}
+.de #deutch3 {
+	background-color: yellow;
+  bottom: 0;
+}
+.en #british-flag {
+	background-color: #00257d
+}
+.en #diagonal-white-1, .en #diagonal-white-2, .en #horizontal-white {
+	background-color: #fff;
+  width: 100%;
+  position: absolute;
+}
+.en #diagonal-white-1, .en #diagonal-white-2 {
+    height: 15%;
+    top: 43%;
+}
+.en #diagonal-white-1 {
+	transform: rotate(30deg);
+  z-index: 3;
+}
+.en #diagonal-white-2 {
+	transform: rotate(-30deg);
+  z-index: 5;
+}
+.en #red-tl, .en #red-br, .en #red-bl, .en #red-tr {
+	background-color: #ff0000;
+	height: 25%;
+  width: 50%;
+  position: absolute;
+}
+.en #red-tl, .en #red-bl {
+  z-index: 4;
+  top: 25%;
+}
+.en #red-br, .en #red-tr {
+  z-index: 6;
+  top: 50%;
+  right: 0;
+}
+.en #horizontal-white {
+	height: 25%;
+	z-index: 7;
+  top: 37.5%;
+}
+.en #vertical-white {
+	background-color: #fff;
+  height: 100%;
+	width: 25%;
+	z-index: 8;
+  position: absolute;
+  left: 37.5%;
+}
+.en #horizontal-red, .en #vertical-red {
+	background-color: #ff0000;
+  position: absolute;
+}
+.en #horizontal-red {
+	height: 15%;
+  width: 100%;
+  z-index: 9;
+  top: 42.5%;
+}
+.en #vertical-red {
+	height: 100%;
+  width: 15%;
+  z-index: 10;
+  left: 42.5%;
+}
+.es #española1 {
+	background-color: red
+}
+.es #española2 {
+	background-color: yellow;
+  top: 33.3%;
+}
+.es #española3 {
+	background-color: red;
+  bottom: 0;
+}
+.fr #français1 {
+	background-color: blue
+}
+.fr #français2, .it #italiana2 {
+	background-color: white;
+  left: 33.3%;
+}
+.fr #français3, .it #italiana3 {
+	background-color: red;
+  right: 0;
+}
+.it #italiana1 {
+	background-color: green
+}
+.ko #hangug-guggi {
+	background-color: white
+}
+.ko #yinyang, .ko #yin, .ko #yang, .ko #hangug1, .ko #hangug2, .ko #hangug3, .ko #hangug4 {
+	position: absolute
+}
+.ko #yinyang {
+	background: linear-gradient(to bottom, #c40e2f 0%, #c40e2f 50%, #000000 50%, #003478 50%, #003478 100%);
+  border-radius: 50%;
+	height: 50%;
+  width: 50%;
+  z-index: 3;
+  top: 25%;
+  left: 25%;
+}
+.ko #yin, .ko #yang {
+  border-radius: 50%;
+  height: 50%;
+  width: 50%;
+  z-index: 4;
+  top: 25%;
+}
+.ko #yin {
+	background: #c40e2f
+}
+.ko #yang {
+	background: #003478;
+	right: 0;
+}
+.ko #hangug1, .ko #hangug2, .ko #hangug3, .ko #hangug4 {
+	height: 10%;
+  width: 20%;
+}
+.ko #hangug1 {
+	transform: rotate(-45deg);
+	top: 21%;
+  left: 9%;
+}
+.ko #hangug2 {
+	transform: rotate(45deg);
+	top: 21%;
+  right: 9%;
+}
+.ko #hangug3 {
+	transform: rotate(45deg);
+  bottom: 21%;
+	left: 9%;
+}
+.ko #hangug4 {
+	transform: rotate(-45deg);
+  right: 9%;
+	bottom: 21%;
+}
+.ko .fullstripe, .ko .halfstripe {
+  height: 25%;
+  width: 100%;
+  margin-bottom: 6.25%;
+}
+.ko .fullstripe {
+	background: #000
+}
+.ko .halfstripe {
+	background: linear-gradient(to right, #000 0%, #000 45%, #fff 45%, #fff 55%, #000 55%, #000 100%)
+}
+.pt #bandeira-portuguesa {
+	background: linear-gradient(to right, #006600 0%, #006600 35%, #FF0000 35%, #FF0000 100%);
+}
+.pt #bandeira-portuguesa img {
+	height: 50%;
+  width: 50%;
+  position: absolute;
+  top: 25%;
+  left: 10%;
+}
+.zh #zhōngguó-guóqí {
+	background-color: red
+}
+.zh #big-star, .zh .little-star {
+  color: yellow;
+  position: absolute;
+}
+.zh #big-star {
+	font-size: 1vw;
+  top: 10%;
+  left: 15%;
+}
+.zh .little-star {
+	font-size: .333vw
+}
+.zh #star1 {
+	transform: rotate(20deg);
+	top: 10%;
+	left: 50%;
+}
+.zh #star2 {
+	transform: rotate(55deg);
+	top: 23%;
+	left: 60%;
+}
+.zh #star3 {
+	transform: rotate(5deg);
+	top: 37%;
+	left: 60%;
+}
+.zh #star4 {
+	transform: rotate(25deg);
+	top: 50%;
+	left: 52%;
+}
+}
