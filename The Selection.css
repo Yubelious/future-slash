@@ -1,3 +1,4 @@
+@-moz-document url("https://duelingnexus.com/login") {
 /*background color to test white text*/
 /*body {
   background-color: black
@@ -316,4 +317,5 @@
 	transform: rotate(25deg);
 	top: 50%;
 	left: 52%;
+}
 }
