@@ -25,9 +25,6 @@
 @-moz-document url-prefix("https://duelingnexus.com/") {
 /*SECTION 2 GLOBAL*/
 /*This code affects the whole site.*/
-html {
-    background-image: url("https://images.wallpapersden.com/image/download/girl-monster-tentacles_7940_3840x2160.jpg")
-}
 body {
     transform: scale(-1);
     font-size: 1em;
@@ -71,7 +68,7 @@ div#app {
     height: 67.5%;
     top: 25%;
 }
-article button, .fake-button[data-v-6f705b54], .fake-button[data-v-7d3c70a7], select, input[type="text"] {
+article button, .fake-button[data-v-417e0dbe]/*Refers to the fake button(s) on the Deck Editor page.*/, .fake-button[data-v-7d3c70a7]/*Refers to the fake button(s) on the My Profile page.*/, select, input[type="text"] {
     font-size: 2.25vh;
     text-align: left;
     background-color: #111925;
@@ -79,7 +76,7 @@ article button, .fake-button[data-v-6f705b54], .fake-button[data-v-7d3c70a7], se
     border-width: 1px;
     padding: .5vh;
 }
-article button:hover, .fake-button[data-v-6f705b54]:hover, .fake-button[data-v-7d3c70a7]:hover {
+article button:hover, .fake-button[data-v-417e0dbe]:hover/*Refers to the fake button(s) on the Deck Editor page.*/, .fake-button[data-v-7d3c70a7]:hover/*Refers to the fake button(s) on the My Profile page.*/ {
     background-color: #4f1158;
     border-color: #84598b;
 }
