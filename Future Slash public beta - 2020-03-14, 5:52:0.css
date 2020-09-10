@@ -95,7 +95,7 @@ a:hover, input:hover, label:hover {
 label {
     line-height: 1
 }
-#gamelist-area[data-v-2c3a555c], #custom-game-area[data-v-5b840ce8], #decks-area[data-v-6f705b54], #my-profile[data-v-7d3c70a7], #leaderboard-page, #donate-area[data-v-6d0fcd6e] {
+#gamelist-area[data-v-33d70790], #custom-game-area[data-v-7fa67ee2], #decks-area[data-v-417e0dbe], #my-profile[data-v-402aeb34], #leaderboard-page, #donate-area[data-v-5ccd2ad4] {
     height: 75%;
     top: 15%;
 }
