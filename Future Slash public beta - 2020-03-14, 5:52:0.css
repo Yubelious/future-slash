@@ -11,7 +11,7 @@
 .app-navbar-hidden #navbar, .app-navbar-hidden #socket-connection, .app-navbar-hidden #login-area, .app-navbar-hidden #register-area, .app-navbar-hidden #recover-area {
     display: none
 }
-.app-navbar-hidden, .app-navbar-hidden div[data-v-9bfe76b0], .app-navbar-hidden div[data-v-9bfe76b0] .app-navbar-hidden #news-area, .app-navbar-hidden #nexus-gui-popup-background {
+.app-navbar-hidden, .app-navbar-hidden div[data-v-9bfe76b0]/*?*/, .app-navbar-hidden div[data-v-9bfe76b0]/*?*/ .app-navbar-hidden #news-area, .app-navbar-hidden #nexus-gui-popup-background {
     height: 100%;
     width: 100% !important;
     position: fixed;
@@ -405,24 +405,24 @@ hr:nth-of-type(1), hr:nth-of-type(4) {
     display: none
 }
 /*gamelist*/
-#gamelist-buttons[data-v-2c3a555c] {
+#gamelist-buttons[data-v-33d70790] {
     height: 6vh;
     max-height: 10%;
     overflow: visible;
     margin: 0;
 }
-#gamelist-buttons[data-v-2c3a555c] button {
+#gamelist-buttons[data-v-33d70790] button {
     line-height: 5vh
 }
-#gamelist-filters[data-v-2c3a555c] {
+#gamelist-filters[data-v-33d70790] {
     max-height: 20%;
     overflow: visible;
     margin: 0;
 }
-#gamelist-filters[data-v-2c3a555c] p {
+#gamelist-filters[data-v-33d70790] p {
     margin: 2%
 }
-#gamelist-container[data-v-2c3a555c] {
+#gamelist-container[data-v-33d70790] {
     overflow-y: scroll;
     overflow-x: hidden;
     height: 70%;
@@ -431,7 +431,7 @@ hr:nth-of-type(1), hr:nth-of-type(4) {
 input[type="checkbox"] {
     margin: 0
 }
-input[data-v-2c3a555c][type="text"] {
+input[data-v-33d70790][type="text"] {
     height: 3.25vh;
     width: 26%;
     padding: 0;
@@ -444,7 +444,7 @@ label {
     opacity: 0;
     float: right;
 }
-label[data-v-2c3a555c]:before {
+label[data-v-33d70790]:before {
     content: " ";
     background-color: #111925;
     border: 1px solid #595e67;
@@ -456,10 +456,10 @@ label[data-v-2c3a555c]:before {
     top: 0;
     left: -25%;
 }
-label[data-v-2c3a555c]:hover:before {
+label[data-v-33d70790]:hover:before {
     border-color: #8518c3
 }
-label[data-v-2c3a555c]:after {
+label[data-v-33d70790]:after {
     content: " ";
     height: 1.5vh;
     width: .75vh;
@@ -468,10 +468,10 @@ label[data-v-2c3a555c]:after {
     top: 10%;
     left: -18.5%;
 }
-input:checked ~ label[data-v-2c3a555c]:after {
+input:checked ~ label[data-v-33d70790]:after {
     display: block
 }
-label[data-v-2c3a555c]:after {
+label[data-v-33d70790]:after {
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
@@ -479,7 +479,7 @@ label[data-v-2c3a555c]:after {
     border-width: 0 1px 1px 0;
     z-index: 3;
 }
-label[data-v-2c3a555c] {
+label[data-v-33d70790] {
     height: 3.5vh;
     left: 35%;
 }
