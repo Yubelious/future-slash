@@ -310,13 +310,14 @@ article:not(#home-area) {
     background-color: #4f1158 !important
 }
 /*duel area*/
+/*duel area*/
 h2 {
     display: none
 }
 #duel-area p {
     margin: 0
 }
-h3, #duel-area > div > p:nth-of-type(6) {
+h3, #duel-area > div > p:nth-of-type(7) {
     font-size: 1.5vw;
     text-align: left;
     margin: 0;
@@ -353,22 +354,25 @@ select {
 #duel-area > div {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: .5fr 1fr 1fr .1fr .5fr 1fr .1fr .5fr 1fr .5fr;
-    grid-template-areas: "quickplay duelstatus duelstatus" "quickplay1 quickplay2 quickplay3" "quickplay4 . ." "hr1 hr1 hr1" "competitiveplay competitiveplay2 competitiveplay2" "competitiveplay1 . ." "hr2 hr2 hr2" "customgame . ." "customgame1 . ." "serversettings1 serversettings1 serversettings1";
+    grid-template-rows: .1fr .5fr .1fr .5fr 1fr .1fr .5fr 1fr .1fr .5fr 1fr .1fr .5fr 1fr .1fr;
+    grid-template-areas: "hr1 hr1 hr1" "serversettings1 serversettings1 serversettings1" "hr2 hr2 hr2" "quickplay duelstatus duelstatus" "quickplay1 quickplay2 quickplay3" "hr3 hr3 hr3" "singlemode . ." "singlemode1 singlemode2 singlemode3" "hr4 hr4 hr4" "competitiveplay currentrating currentrating" "competitiveplay1 competitiveplay2 competitiveplay3" "hr5 hr5 hr5" "customgame . ." "customgame1 . .";
 }
 #duel-area > div > h3:first-of-type {
     grid-area: quickplay
 }
 #duel-area > div > h3:nth-of-type(2) {
-    grid-area: competitiveplay
+    grid-area: singlemode
 }
 #duel-area > div > h3:nth-of-type(3) {
-    grid-area: customgame
+    grid-area: competitiveplay
 }
 #duel-area > div > h3:nth-of-type(4) {
+    grid-area: customgame
+}
+#duel-area > div > h3:nth-of-type(5) {
     display: none
 }
-#duel-area > div > p:nth-of-type(1) {
+#duel-area > div > p:first-of-type {
     grid-area: quickplay1
 }
 #duel-area > div > p:nth-of-type(2) {
@@ -378,31 +382,40 @@ select {
     grid-area: quickplay3
 }
 #duel-area > div > p:nth-of-type(4) {
-    grid-area: quickplay4
+    grid-area: singlemode1
 }
 #duel-area > div > p:nth-of-type(5) {
-    grid-area: competitiveplay1
+    grid-area: singlemode2
 }
 #duel-area > div > p:nth-of-type(6) {
-    grid-area: competitiveplay2;
+    grid-area: competitiveplay1
+}
+#duel-area > div > p:nth-of-type(7) {
+    grid-area: currentrating;
     text-transform: uppercase;
     text-align: right;
     padding: 1vh 10% .5vh 0;
 }
-#duel-area > div > p:nth-of-type(7) {
+#duel-area > div > p:nth-of-type(8) {
     grid-area: customgame1
 }
-#duel-area > div > p:nth-of-type(8) {
+#duel-area > div > p:nth-of-type(9) {
     grid-area: serversettings1
 }
-hr:nth-of-type(2) {
+hr:first-of-type {
     grid-area: hr1
 }
-hr:nth-of-type(3) {
+hr:nth-of-type(2) {
     grid-area: hr2
 }
-hr:nth-of-type(1), hr:nth-of-type(4) {
-    display: none
+hr:nth-of-type(3) {
+    grid-area: hr3
+}
+hr:nth-of-type(4) {
+    grid-area: hr4
+}
+hr:nth-of-type(5) {
+    grid-area: hr5
 }
 /*gamelist*/
 #gamelist-buttons[data-v-33d70790] {
