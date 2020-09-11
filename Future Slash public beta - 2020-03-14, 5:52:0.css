@@ -68,7 +68,7 @@ div#app {
     height: 67.5%;
     top: 25%;
 }
-article button, .fake-button[data-v-417e0dbe]/*Refers to the fake button(s) on the Deck Editor page.*/, .fake-button[data-v-7d3c70a7]/*Refers to the fake button(s) on the My Profile page.*/, select, input[type="text"] {
+article button, .fake-button[data-v-417e0dbe]/*Refers to the fake button(s) on the Deck Editor page.*/, .fake-button[data-v-402aeb34]/*Refers to the fake button(s) on the My Profile page.*/, select, input[type="text"] {
     font-size: 2.25vh;
     text-align: left;
     background-color: #111925;
@@ -76,7 +76,7 @@ article button, .fake-button[data-v-417e0dbe]/*Refers to the fake button(s) on t
     border-width: 1px;
     padding: .5vh;
 }
-article button:hover, .fake-button[data-v-417e0dbe]:hover/*Refers to the fake button(s) on the Deck Editor page.*/, .fake-button[data-v-7d3c70a7]:hover/*Refers to the fake button(s) on the My Profile page.*/ {
+article button:hover, .fake-button[data-v-417e0dbe]:hover/*Refers to the fake button(s) on the Deck Editor page.*/, .fake-button[data-v-402aeb34]:hover/*Refers to the fake button(s) on the My Profile page.*/ {
     background-color: #4f1158;
     border-color: #84598b;
 }
