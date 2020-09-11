@@ -973,9 +973,7 @@ article button, form div {
     background-color: rgba(0, 0, 0, 0);
     border: 0;
 }
-	
--
-#login-area[data-v-9bfe76b0], #register-area[data-v-4068c77b], #recover-area[data-v-8098b0b4] {
+#login-area[data-v-26bcedb3], #register-area[data-v-e589858c], #recover-area[data-v-29814b1] {
     background-color: rgba(0, 0, 0, 0);
     border-width: 0;
 }
