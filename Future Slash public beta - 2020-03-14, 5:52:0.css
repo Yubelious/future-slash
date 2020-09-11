@@ -1181,7 +1181,7 @@ body {
 article {
     z-index: 1
 }
-#login-area[data-v-9bfe76b0], #register-area[data-v-4068c77b], #recover-area[data-v-8098b0b4], #navbar, #navbar-left {
+#login-area[data-v-26bcedb3], #register-area[data-v-e589858c], #recover-area[data-v-29814b1], #navbar, #navbar-left {
     width: 100vw;
     z-index: 2;
     position: fixed;
@@ -1251,7 +1251,7 @@ article {
 #navbar-middle button, #navbar-right {
     display: none
 }
-#links-area[data-v-9bfe76b0], #links-area[data-v-4068c77b], #links-area[data-v-8098b0b4] {
+#links-area[data-v-26bcedb3]/*login*/, #links-area[data-v-e589858c]/*register*/, #links-area[data-v-29814b1]/*recover*/ {
     border-top: 0;
     margin: 0;
     padding: 0;
@@ -1268,19 +1268,19 @@ form button {
 form input[type="checkbox"] {
     margin: 0
 }
-#login-area[data-v-9bfe76b0] .input-checkbox-group {
+#login-area[data-v-26bcedb3] .input-checkbox-group {
     text-align: left;
     text-indent: 6vh;
     width: 90%;
     position: relative;
     left: 10%;
 }
-#login-area[data-v-9bfe76b0] .input-checkbox-group input {
+#login-area[data-v-26bcedb3] .input-checkbox-group input {
     opacity: 0;
     z-index: 1;
     float: right;
 }
-#login-area[data-v-9bfe76b0] .input-checkbox-group label:before {
+#login-area[data-v-26bcedb3] .input-checkbox-group label:before {
     content: " ";
     background-color: #111925;
     border: 1px solid #595e67;
@@ -1288,18 +1288,18 @@ form input[type="checkbox"] {
     display: block;
     position: fixed;
 }
-#login-area[data-v-9bfe76b0] .input-checkbox-group label:hover:before {
+#login-area[data-v-26bcedb3] .input-checkbox-group label:hover:before {
     border-color: #8518c3
 }
-label[data-v-9bfe76b0]:after {
+label[data-v-26bcedb3]:after {
     content: " ";
     position: absolute;
     display: none;
 }
-.input-checkbox-group input:checked ~ label[data-v-9bfe76b0]:after {
+.input-checkbox-group input:checked ~ label[data-v-26bcedb3]:after {
     display: block
 }
-.input-checkbox-group label[data-v-9bfe76b0]:after {
+.input-checkbox-group label[data-v-26bcedb3]:after {
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
@@ -1314,7 +1314,7 @@ label[data-v-9bfe76b0]:before {
     width: 2.75vh;
     margin-left: .5vw;
 }
-.input-checkbox-group label[data-v-9bfe76b0]:after {
+.input-checkbox-group label[data-v-26bcedb3]:after {
     height: 1.5vh;
     width: .75vh;
     top: 1vh;
@@ -1323,12 +1323,12 @@ label[data-v-9bfe76b0]:before {
 
 }
 @media (max-height: 500px) {
-label[data-v-9bfe76b0]:before {
+label[data-v-26bcedb3]:before {
     height: 2vh;
     width: 2vh;
     margin-left: .5%;
 }
-.input-checkbox-group label[data-v-9bfe76b0]:after {
+.input-checkbox-group label[data-v-26bcedb3]:after {
     height: 1.5vh;
     width: .75vh;
     top: 1vh;
