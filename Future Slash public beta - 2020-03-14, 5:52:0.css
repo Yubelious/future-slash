@@ -11,7 +11,7 @@
 .app-navbar-hidden #navbar, .app-navbar-hidden #socket-connection, .app-navbar-hidden #login-area, .app-navbar-hidden #register-area, .app-navbar-hidden #recover-area {
     display: none
 }
-.app-navbar-hidden, .app-navbar-hidden div[data-v-9bfe76b0]/*?*/, .app-navbar-hidden div[data-v-9bfe76b0]/*?*/ .app-navbar-hidden #news-area, .app-navbar-hidden #nexus-gui-popup-background {
+.app-navbar-hidden, .app-navbar-hidden div[data-v-26bcedb3]/*Login area*/, .app-navbar-hidden div[data-v-26bcedb3]/*Login area*/ .app-navbar-hidden #news-area, .app-navbar-hidden #nexus-gui-popup-background {
     height: 100%;
     width: 100% !important;
     position: fixed;
@@ -498,7 +498,7 @@ td, th {
     margin: 0;
     position: relative;
 }
-#custom-game-area[data-v-5b840ce8] {
+#custom-game-area[data-v-7fa67ee2] {
     display: grid;
     grid-gap: 5%;
     grid-template-columns: repeat(3, 1fr);
@@ -562,17 +562,17 @@ td, th {
 #navbar-middle > button:nth-of-type(3) {
     background-color: #4f1158 !important
 }
-h2[data-v-6f705b54] {
+h2[data-v-417e0dbe] {
     overflow: visible;
     max-height: 6%;
     margin: 1%;
 }
-#decks-buttons[data-v-6f705b54] {
+#decks-buttons[data-v-417e0dbe] {
     overflow: visible;
     max-height: 15%;
     margin-bottom : 1%;
 }
-#decks-buttons button, button[data-v-6f705b54], .fake-button[data-v-6f705b54] {
+#decks-buttons button, button[data-v-417e0dbe], .fake-button[data-v-417e0dbe] {
     text-align: center;
     box-sizing: border-box;
     width: 24%;
@@ -610,7 +610,7 @@ td {
 #navbar-middle > button:nth-of-type(4) {
     background-color: #4f1158 !important
 }
-.remove-custom-button[data-v-7d3c70a7], .fake-button[data-v-7d3c70a7] {
+.remove-custom-button[data-v-402aeb34], .fake-button[data-v-402aeb34] {
     text-align: center;
     line-height: 1;
     box-sizing: border-box;
@@ -904,7 +904,7 @@ body {
     height: 100vh;
     position: relative;
 }
-form[data-v-9bfe76b0], form[data-v-4068c77b], form input[type="checkbox"] {
+form[data-v-26bcedb3]/*Login form*/, form[data-v-4068c77b]/*Register form*/, form input[type="checkbox"] {
     margin: 0;
     padding: 0;
 }
@@ -973,6 +973,8 @@ article button, form div {
     background-color: rgba(0, 0, 0, 0);
     border: 0;
 }
+	
+-
 #login-area[data-v-9bfe76b0], #register-area[data-v-4068c77b], #recover-area[data-v-8098b0b4] {
     background-color: rgba(0, 0, 0, 0);
     border-width: 0;
