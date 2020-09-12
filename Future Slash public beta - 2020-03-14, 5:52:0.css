@@ -436,7 +436,7 @@ hr:nth-of-type(5) {
 #gamelist-container[data-v-33d70790] {
     overflow-y: scroll;
     overflow-x: hidden;
-    height: 70%;
+    height: 64%;
 }
 /*custom checkbox*/
 input[type="checkbox"] {
@@ -477,7 +477,7 @@ label[data-v-33d70790]:after {
     position: absolute;
     display: none;
     top: 10%;
-    left: -18.5%;
+    left: -19.5%;
 }
 input:checked ~ label[data-v-33d70790]:after {
     display: block
@@ -487,7 +487,7 @@ label[data-v-33d70790]:after {
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
     border: solid #8518c3;
-    border-width: 0 1px 1px 0;
+    border-width: 0 3px 3px 0;
     z-index: 3;
 }
 label[data-v-33d70790] {
@@ -1313,7 +1313,7 @@ label[data-v-26bcedb3]:after {
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
     border: solid #8518c3;
-    border-width: 0 1px 1px 0;
+    border-width: 0 2px 2px 0;
     z-index: 3;
 }
 
@@ -1326,8 +1326,8 @@ label[data-v-26bcedb3]:before {
 .input-checkbox-group label[data-v-26bcedb3]:after {
     height: 1.5vh;
     width: .75vh;
-    top: 1vh;
-    left: 5.25%;
+    top: .9vh;
+    left: 5.1%;
 }
 
 }
