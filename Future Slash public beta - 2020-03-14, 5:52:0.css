@@ -1,10 +1,11 @@
 /* ==UserStyle==
-@name           Future Slash public beta - 2020-03-14, 5:52:01 p.m.
+@name           Future Slash public beta - ?
 @namespace      github.com/openstyles/stylus
-@version        1.4.0
+@version        1.5.0
 @description    This isn't just a theme. It is the future of Dueling Nexus. Please test this beta and provide any feedback that you can by DMing #Yubelious!#5584 on Discord. If you have any issues figuring out how to test this CSS, please ask in #extensions-support on the official forum.
 @author         MIT License Copyright (c)2020 Yubelious!
 ==/UserStyle== */
+
 @-moz-document url-prefix("https://duelingnexus.com/") {
 /*SECTION 1 NONAVBAR*/
 /*This affects the site while the navbar is colapsed.*/
@@ -26,7 +27,6 @@
 /*SECTION 2 GLOBAL*/
 /*This code affects the whole site.*/
 body {
-    transform: scale(-1);
     font-size: 1em;
     height: 100vh;
     margin: 0;
@@ -138,6 +138,48 @@ article {
 		opacity: 1;
 	}
 }
+@media (orientation: landscape) {
+h1, h2, h3 {
+    letter-spacing: .1vw
+}
+h1 {
+    font-size: 2vw
+}
+h2 {
+    font-size: 1.75vw;
+    margin: 1%;
+}
+h3 {
+    font-size: 1.5vw
+}
+h4 {
+    font-size: 1.25vw
+}
+li {
+    font-size: 1vw
+}
+}
+@media (orientation: portrait) {
+h1, h2, h3 {
+    letter-spacing: .2vh
+}
+h1 {
+    font-size: 4vh
+}
+h2 {
+    font-size: 3.5vh;
+    margin: 1%;
+}
+h3 {
+    font-size: 3vh
+}
+h4 {
+    font-size: 2.5vh
+}
+li {
+    font-size: 2vh
+}
+}
 }
 
 @-moz-document url("https://duelingnexus.com/login"), url("https://duelingnexus.com/register"), url("https://duelingnexus.com/recover"), url("https://duelingnexus.com/privacy_policy.html") {
@@ -154,14 +196,15 @@ article {
     padding: 0;
     position: absolute;
 }
-#news-area:before {
+div#app:before {
     content: ' ';
-    background: url('https://raw.githubusercontent.com/victorgodoka/ygoblog/master/images/dn-logo.png') no-repeat center;
+    background: url('https://cdn.discordapp.com/attachments/670405796747673620/754166777587564655/Logo_Full.png') no-repeat center;
     background-size: auto 100%;
     height: 40%;
     width: 100%;
     display: block;
     opacity: 1;
+    z-index: 3;
     position: absolute;
     top: auto;
     right: 0;
@@ -215,46 +258,6 @@ h1, h2, h3 {
     overflow-y: scroll;
     position: absolute;
     top: 0;
-}
-@media (orientation: landscape) {
-h1, h2, h3 {
-    letter-spacing: .1vw
-}
-h1 {
-    font-size: 2vw
-}
-h2 {
-    font-size: 1.75vw
-}
-h3 {
-    font-size: 1.5vw
-}
-h4 {
-    font-size: 1.25vw
-}
-li {
-    font-size: 1vw
-}
-}
-@media (orientation: portrait) {
-h1, h2, h3 {
-    letter-spacing: .2vh
-}
-h1 {
-    font-size: 4vh
-}
-h2 {
-    font-size: 3.5vh
-}
-h3 {
-    font-size: 3vh
-}
-h4 {
-    font-size: 2.5vh
-}
-li {
-    font-size: 2vh
-}
 }
 }
 
@@ -310,15 +313,10 @@ article:not(#home-area) {
     background-color: #4f1158 !important
 }
 /*duel area*/
-/*duel area*/
-h2 {
-    display: none
-}
 #duel-area p {
     margin: 0
 }
 h3, #duel-area > div > p:nth-of-type(7) {
-    font-size: 1.5vw;
     text-align: left;
     margin: 0;
 }
@@ -598,7 +596,7 @@ h2[data-v-417e0dbe] {
     position: absolute;
     bottom: 2%;
 }
-table[data-v-6f705b54] {
+table[data-v-417e0dbe] {
     width: 99%;
     table-layout: fixed;
 }
@@ -779,14 +777,14 @@ body {
 #rs-ext-banlist, .engine-button {
     border: 1px solid
 }
-#rs-ext-banlist, .engine-button-navbar {
+#rs-ext-banlist, #editor-menu-title:nth-of-type(3), #editor-select-cardpool, .engine-button-navbar {
     font-size: 1.2vw;
     color: white;
     height: 4vh;
     float: left;
     margin: 2vh 0 0 .5vh;
 }
-#rs-ext-banlist, .engine-button-default {
+#rs-ext-banlist, #editor-select-cardpool, .engine-button-default {
     background-color: #111925
 }
 .engine-button-primary {
@@ -809,7 +807,7 @@ body {
     padding: 0;
     left: 0;
 }
-#editor-menu-title {
+#editor-menu-title:first-of-type {
     line-height: 3.5;
     text-align: right;
     word-wrap: break-word;
@@ -986,7 +984,7 @@ article button, form div {
     background-color: rgba(0, 0, 0, 0);
     border: 0;
 }
-#login-area[data-v-26bcedb3], #register-area[data-v-e589858c], #recover-area[data-v-29814b1] {
+#login-area[data-v-26bcedb3], #register-area[data-v-e589858c], #recover-area[data-v-29814b14] {
     background-color: rgba(0, 0, 0, 0);
     border-width: 0;
 }
@@ -1027,7 +1025,6 @@ form div {
     position: absolute;
     top: 0;
 }
-
 }
 
 @-moz-document domain("duelingnexus.com") {
@@ -1043,7 +1040,7 @@ form div {
     bottom: 0;
     left: 25%;
 }
-#navbar, #login-area[data-v-26bcedb3], #register-area[data-v-e589858c], #recover-area[data-v-29814b1] {
+#navbar, #login-area[data-v-26bcedb3], #register-area[data-v-e589858c], #recover-area[data-v-29814b14] {
     max-height: 100vh;
     width: 25%;
     position: fixed;
@@ -1116,7 +1113,7 @@ a, label, #login-area p, #register-area p, #recover-area p {
     bottom: 0;
     left: 20%;
 }
-#navbar, #login-area[data-v-26bcedb3], #register-area[data-v-e589858c], #recover-area[data-v-29814b1] {
+#navbar, #login-area[data-v-26bcedb3], #register-area[data-v-e589858c], #recover-area[data-v-29814b14] {
     max-height: 100vh;
     width: 20%;
     position: fixed;
@@ -1194,7 +1191,7 @@ body {
 article {
     z-index: 1
 }
-#login-area[data-v-26bcedb3], #register-area[data-v-e589858c], #recover-area[data-v-29814b1], #navbar, #navbar-left {
+#login-area[data-v-26bcedb3], #register-area[data-v-e589858c], #recover-area[data-v-29814b14], #navbar, #navbar-left {
     width: 100vw;
     z-index: 2;
     position: fixed;
@@ -1259,12 +1256,12 @@ article {
 }
 
 @-moz-document url-prefix("https://duelingnexus.com/login"), url-prefix("https://duelingnexus.com/register"), url-prefix("https://duelingnexus.com/recover") {
-/*SECTION 15 LOGIN*/
+/*SECTION 15 LOGINANIMATION*/
 /*This affects the navbar area while logged out. This smooths out the login animation.*/
 #navbar-middle button, #navbar-right {
     display: none
 }
-#links-area[data-v-26bcedb3]/*login*/, #links-area[data-v-e589858c]/*register*/, #links-area[data-v-29814b1]/*recover*/ {
+#links-area[data-v-26bcedb3]/*login*/, #links-area[data-v-e589858c]/*register*/, #links-area[data-v-29814b14]/*recover*/ {
     border-top: 0;
     margin: 0;
     padding: 0;
@@ -1322,7 +1319,7 @@ label[data-v-26bcedb3]:after {
 }
 
 @media (min-height: 500px) and (orientation: landscape) {
-label[data-v-9bfe76b0]:before {
+label[data-v-26bcedb3]:before {
     height: 2.75vh;
     width: 2.75vh;
     margin-left: .5vw;
@@ -1363,6 +1360,7 @@ label:before {
 }
 }
 }
+
 /*
 Patch Notes
 v1.4: improved the navbar.
