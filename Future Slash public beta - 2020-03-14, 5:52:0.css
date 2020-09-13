@@ -1286,7 +1286,9 @@ input[type="checkbox"] {
     z-index: 2;
 }
 #login-area[data-v-26bcedb3] .input-checkbox-group label:hover:before, label[data-v-33d70790]:hover:before {
-    border-color: #8518c3
+    border-color: #8518c3;
+    height: 1.5vh;
+    width: .75vh;
 }
 label[data-v-26bcedb3]:after, label[data-v-33d70790]:after {
     content: " ";
@@ -1314,6 +1316,9 @@ label[data-v-26bcedb3]:after, label[data-v-33d70790]:after {
 #login-area[data-v-26bcedb3] .input-checkbox-group label:before {
     position: fixed
 }
+label[data-v-26bcedb3]:before {
+    margin-left: .5vw
+}
 /*gamelist checkbox*/
 input[data-v-33d70790][type="text"] {
     height: 3.25vh;
@@ -1322,29 +1327,22 @@ input[data-v-33d70790][type="text"] {
 }
 label[data-v-33d70790] {
     line-height: 3.5vh;
-    position: absolute;
-}
-label[data-v-33d70790] {
     height: 3.5vh;
+    position: absolute;
     left: 35%;
-}
-@media (min-height: 500px) and (orientation: landscape) {
-label[data-v-26bcedb3]:before, label[data-v-33d70790]:before {
-    height: 2.75vh;
-    width: 2.75vh;
-}
-label[data-v-26bcedb3]:before {
-    margin-left: .5vw
 }
 label[data-v-33d70790]:before {
     position: absolute;
     top: 0;
     left: -25%;
 }
+@media (min-height: 500px) and (orientation: landscape) {
+label[data-v-26bcedb3]:before, label[data-v-33d70790]:before {
+    height: 2.75vh;
+    width: 2.75vh;
+}
 .input-checkbox-group label[data-v-26bcedb3]:after, label[data-v-33d70790]:after {
-    border-width: 0 3px 3px 0;
-    height: 1.5vh;
-    width: .75vh;
+    border-width: 0 3px 3px 0
 }
 .input-checkbox-group label[data-v-26bcedb3]:after {
     top: .9vh;
@@ -1355,58 +1353,35 @@ label[data-v-33d70790]:after {
     left: -19.5%;
 }
 }
-@media (max-height: 500px) {
+@media (max-height: 500px) and (orientation: landscape) {
 label[data-v-26bcedb3]:before, label[data-v-33d70790]:before {
     height: 2vh;
     width: 2vh;
 }
-label[data-v-26bcedb3]:before {
-    margin-left: .5%
-}
-label[data-v-33d70790]:before {
-    position: absolute;
-    top: 0;
-    left: -25%;
-}
 .input-checkbox-group label[data-v-26bcedb3]:after, label[data-v-33d70790]:after {
-    border-width: 0 2px 2px 0;
-    height: 1.5vh;
-    width: .75vh;
+    border-width: 0 2px 2px 0
 }
 .input-checkbox-group label[data-v-26bcedb3]:after {
     top: 5%;
     left: 5%;
 }
 label[data-v-33d70790]:after {
-    top: 10%;
-    left: -19.5%;
+    top: 1%;
+    left: -22%;
 }
 }
 @media (orientation: portrait) {
-label[data-v-26bcedb3]:before, label[data-v-33d70790]:before {
+label[data-v-26bcedb3]:before {
     height: 2.5vh;
     width: 2.5vh;
-}
-label[data-v-26bcedb3]:before {
     margin-left: .5vw
 }
-label[data-v-33d70790]:before {
-    position: absolute;
-    top: 0;
-    left: -25%;
-}
-.input-checkbox-group label[data-v-26bcedb3]:after, label[data-v-33d70790]:after {
+.input-checkbox-group label[data-v-26bcedb3]:after {
     border-width: 0 6px 6px 0;
     height: 1.5vh;
     width: .75vh;
-}
-.input-checkbox-group label[data-v-26bcedb3]:after {
     top: 1.25vw;
     left: 2.2%;
-}
-label[data-v-33d70790]:after {
-    top: 10%;
-    left: -19.5%;
 }
 }
 }
