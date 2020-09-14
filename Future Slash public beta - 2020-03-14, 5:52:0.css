@@ -1,17 +1,18 @@
 /* ==UserStyle==
-@name           Future Slash public beta - 2020-03-14, 5:52:01 p.m.
+@name           Future Slash public beta - ?
 @namespace      github.com/openstyles/stylus
-@version        1.4.0
+@version        1.5.0
 @description    This isn't just a theme. It is the future of Dueling Nexus. Please test this beta and provide any feedback that you can by DMing #Yubelious!#5584 on Discord. If you have any issues figuring out how to test this CSS, please ask in #extensions-support on the official forum.
 @author         MIT License Copyright (c)2020 Yubelious!
 ==/UserStyle== */
+
 @-moz-document url-prefix("https://duelingnexus.com/") {
 /*SECTION 1 NONAVBAR*/
 /*This affects the site while the navbar is colapsed.*/
 .app-navbar-hidden #navbar, .app-navbar-hidden #socket-connection, .app-navbar-hidden #login-area, .app-navbar-hidden #register-area, .app-navbar-hidden #recover-area {
     display: none
 }
-.app-navbar-hidden, .app-navbar-hidden div[data-v-9bfe76b0], .app-navbar-hidden div[data-v-9bfe76b0] .app-navbar-hidden #news-area, .app-navbar-hidden #nexus-gui-popup-background {
+.app-navbar-hidden, .app-navbar-hidden div[data-v-26bcedb3]/*Login area*/, .app-navbar-hidden div[data-v-26bcedb3]/*Login area*/ .app-navbar-hidden #news-area, .app-navbar-hidden #nexus-gui-popup-background {
     height: 100%;
     width: 100% !important;
     position: fixed;
@@ -25,11 +26,7 @@
 @-moz-document url-prefix("https://duelingnexus.com/") {
 /*SECTION 2 GLOBAL*/
 /*This code affects the whole site.*/
-html {
-    background-image: url("https://images.wallpapersden.com/image/download/girl-monster-tentacles_7940_3840x2160.jpg")
-}
 body {
-    transform: scale(-1);
     font-size: 1em;
     height: 100vh;
     margin: 0;
@@ -53,7 +50,7 @@ div#app {
 #home-area h2, #home-area button {
     display: none
 }
-#duel-area, #gamelist-area[data-v-2c3a555c], #custom-game-area[data-v-5b840ce8], #decks-area[data-v-6f705b54], #my-profile[data-v-7d3c70a7], #leaderboard-page, #donate-area[data-v-6d0fcd6e] {
+#duel-area, #gamelist-area[data-v-33d70790], #custom-game-area[data-v-7fa67ee2], #decks-area[data-v-417e0dbe], #my-profile[data-v-402aeb34], #leaderboard-page, #donate-area[data-v-5ccd2ad4] {
     box-sizing: border-box;
     display: block;
     overflow-y: auto;
@@ -71,7 +68,7 @@ div#app {
     height: 67.5%;
     top: 25%;
 }
-article button, .fake-button[data-v-6f705b54], .fake-button[data-v-7d3c70a7], select, input[type="text"] {
+article button, .fake-button[data-v-417e0dbe]/*Refers to the fake button(s) on the Deck Editor page.*/, .fake-button[data-v-402aeb34]/*Refers to the fake button(s) on the My Profile page.*/, select, input[type="text"] {
     font-size: 2.25vh;
     text-align: left;
     background-color: #111925;
@@ -79,7 +76,7 @@ article button, .fake-button[data-v-6f705b54], .fake-button[data-v-7d3c70a7], se
     border-width: 1px;
     padding: .5vh;
 }
-article button:hover, .fake-button[data-v-6f705b54]:hover, .fake-button[data-v-7d3c70a7]:hover {
+article button:hover, .fake-button[data-v-417e0dbe]:hover/*Refers to the fake button(s) on the Deck Editor page.*/, .fake-button[data-v-402aeb34]:hover/*Refers to the fake button(s) on the My Profile page.*/ {
     background-color: #4f1158;
     border-color: #84598b;
 }
@@ -98,7 +95,7 @@ a:hover, input:hover, label:hover {
 label {
     line-height: 1
 }
-#gamelist-area[data-v-2c3a555c], #custom-game-area[data-v-5b840ce8], #decks-area[data-v-6f705b54], #my-profile[data-v-7d3c70a7], #leaderboard-page, #donate-area[data-v-6d0fcd6e] {
+#gamelist-area[data-v-33d70790], #custom-game-area[data-v-7fa67ee2], #decks-area[data-v-417e0dbe], #my-profile[data-v-402aeb34], #leaderboard-page, #donate-area[data-v-5ccd2ad4] {
     height: 75%;
     top: 15%;
 }
@@ -141,6 +138,48 @@ article {
 		opacity: 1;
 	}
 }
+@media (orientation: landscape) {
+h1, h2, h3 {
+    letter-spacing: .1vw
+}
+h1 {
+    font-size: 2vw
+}
+h2 {
+    font-size: 1.75vw;
+    margin: 1%;
+}
+h3 {
+    font-size: 1.5vw
+}
+h4 {
+    font-size: 1.25vw
+}
+li {
+    font-size: 1vw
+}
+}
+@media (orientation: portrait) {
+h1, h2, h3 {
+    letter-spacing: .2vh
+}
+h1 {
+    font-size: 4vh
+}
+h2 {
+    font-size: 3.5vh;
+    margin: 1%;
+}
+h3 {
+    font-size: 3vh
+}
+h4 {
+    font-size: 2.5vh
+}
+li {
+    font-size: 2vh
+}
+}
 }
 
 @-moz-document url("https://duelingnexus.com/login"), url("https://duelingnexus.com/register"), url("https://duelingnexus.com/recover"), url("https://duelingnexus.com/privacy_policy.html") {
@@ -157,9 +196,9 @@ article {
     padding: 0;
     position: absolute;
 }
-#news-area:before {
+#news-area:before, div#app:before {
     content: ' ';
-    background: url('https://raw.githubusercontent.com/victorgodoka/ygoblog/master/images/dn-logo.png') no-repeat center;
+    background: url('https://cdn.discordapp.com/attachments/670405796747673620/754166777587564655/Logo_Full.png') no-repeat center;
     background-size: auto 100%;
     height: 40%;
     width: 100%;
@@ -219,46 +258,6 @@ h1, h2, h3 {
     position: absolute;
     top: 0;
 }
-@media (orientation: landscape) {
-h1, h2, h3 {
-    letter-spacing: .1vw
-}
-h1 {
-    font-size: 2vw
-}
-h2 {
-    font-size: 1.75vw
-}
-h3 {
-    font-size: 1.5vw
-}
-h4 {
-    font-size: 1.25vw
-}
-li {
-    font-size: 1vw
-}
-}
-@media (orientation: portrait) {
-h1, h2, h3 {
-    letter-spacing: .2vh
-}
-h1 {
-    font-size: 4vh
-}
-h2 {
-    font-size: 3.5vh
-}
-h3 {
-    font-size: 3vh
-}
-h4 {
-    font-size: 2.5vh
-}
-li {
-    font-size: 2vh
-}
-}
 }
 
 @-moz-document url("https://duelingnexus.com/home") {
@@ -313,14 +312,10 @@ article:not(#home-area) {
     background-color: #4f1158 !important
 }
 /*duel area*/
-h2 {
-    display: none
-}
 #duel-area p {
     margin: 0
 }
-h3, #duel-area > div > p:nth-of-type(6) {
-    font-size: 1.5vw;
+h3, #duel-area > div > p:nth-of-type(7) {
     text-align: left;
     margin: 0;
 }
@@ -356,22 +351,25 @@ select {
 #duel-area > div {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: .5fr 1fr 1fr .1fr .5fr 1fr .1fr .5fr 1fr .5fr;
-    grid-template-areas: "quickplay duelstatus duelstatus" "quickplay1 quickplay2 quickplay3" "quickplay4 . ." "hr1 hr1 hr1" "competitiveplay competitiveplay2 competitiveplay2" "competitiveplay1 . ." "hr2 hr2 hr2" "customgame . ." "customgame1 . ." "serversettings1 serversettings1 serversettings1";
+    grid-template-rows: .1fr .5fr .1fr .5fr 1fr .1fr .5fr 1fr .1fr .5fr 1fr .1fr .5fr 1fr .1fr;
+    grid-template-areas: "hr1 hr1 hr1" "serversettings1 serversettings1 serversettings1" "hr2 hr2 hr2" "quickplay duelstatus duelstatus" "quickplay1 quickplay2 quickplay3" "hr3 hr3 hr3" "singlemode . ." "singlemode1 singlemode2 singlemode3" "hr4 hr4 hr4" "competitiveplay currentrating currentrating" "competitiveplay1 competitiveplay2 competitiveplay3" "hr5 hr5 hr5" "customgame . ." "customgame1 . .";
 }
 #duel-area > div > h3:first-of-type {
     grid-area: quickplay
 }
 #duel-area > div > h3:nth-of-type(2) {
-    grid-area: competitiveplay
+    grid-area: singlemode
 }
 #duel-area > div > h3:nth-of-type(3) {
-    grid-area: customgame
+    grid-area: competitiveplay
 }
 #duel-area > div > h3:nth-of-type(4) {
+    grid-area: customgame
+}
+#duel-area > div > h3:nth-of-type(5) {
     display: none
 }
-#duel-area > div > p:nth-of-type(1) {
+#duel-area > div > p:first-of-type {
     grid-area: quickplay1
 }
 #duel-area > div > p:nth-of-type(2) {
@@ -381,110 +379,63 @@ select {
     grid-area: quickplay3
 }
 #duel-area > div > p:nth-of-type(4) {
-    grid-area: quickplay4
+    grid-area: singlemode1
 }
 #duel-area > div > p:nth-of-type(5) {
-    grid-area: competitiveplay1
+    grid-area: singlemode2
 }
 #duel-area > div > p:nth-of-type(6) {
-    grid-area: competitiveplay2;
+    grid-area: competitiveplay1
+}
+#duel-area > div > p:nth-of-type(7) {
+    grid-area: currentrating;
     text-transform: uppercase;
     text-align: right;
     padding: 1vh 10% .5vh 0;
 }
-#duel-area > div > p:nth-of-type(7) {
+#duel-area > div > p:nth-of-type(8) {
     grid-area: customgame1
 }
-#duel-area > div > p:nth-of-type(8) {
+#duel-area > div > p:nth-of-type(9) {
     grid-area: serversettings1
 }
-hr:nth-of-type(2) {
+hr:first-of-type {
     grid-area: hr1
 }
-hr:nth-of-type(3) {
+hr:nth-of-type(2) {
     grid-area: hr2
 }
-hr:nth-of-type(1), hr:nth-of-type(4) {
-    display: none
+hr:nth-of-type(3) {
+    grid-area: hr3
+}
+hr:nth-of-type(4) {
+    grid-area: hr4
+}
+hr:nth-of-type(5) {
+    grid-area: hr5
 }
 /*gamelist*/
-#gamelist-buttons[data-v-2c3a555c] {
+#gamelist-buttons[data-v-33d70790] {
     height: 6vh;
     max-height: 10%;
     overflow: visible;
     margin: 0;
 }
-#gamelist-buttons[data-v-2c3a555c] button {
+#gamelist-buttons[data-v-33d70790] button {
     line-height: 5vh
 }
-#gamelist-filters[data-v-2c3a555c] {
+#gamelist-filters[data-v-33d70790] {
     max-height: 20%;
     overflow: visible;
     margin: 0;
 }
-#gamelist-filters[data-v-2c3a555c] p {
+#gamelist-filters[data-v-33d70790] p {
     margin: 2%
 }
-#gamelist-container[data-v-2c3a555c] {
+#gamelist-container[data-v-33d70790] {
     overflow-y: scroll;
     overflow-x: hidden;
-    height: 70%;
-}
-/*custom checkbox*/
-input[type="checkbox"] {
-    margin: 0
-}
-input[data-v-2c3a555c][type="text"] {
-    height: 3.25vh;
-    width: 26%;
-    padding: 0;
-}
-label {
-    line-height: 3.5vh;
-    position: absolute;
-}
-#hide-started-games {
-    opacity: 0;
-    float: right;
-}
-label[data-v-2c3a555c]:before {
-    content: " ";
-    background-color: #111925;
-    border: 1px solid #595e67;
-    height: 2.75vh;
-    width: 2.75vh;
-    display: block;
-    z-index: 2;
-    position: absolute;
-    top: 0;
-    left: -25%;
-}
-label[data-v-2c3a555c]:hover:before {
-    border-color: #8518c3
-}
-label[data-v-2c3a555c]:after {
-    content: " ";
-    height: 1.5vh;
-    width: .75vh;
-    position: absolute;
-    display: none;
-    top: 10%;
-    left: -18.5%;
-}
-input:checked ~ label[data-v-2c3a555c]:after {
-    display: block
-}
-label[data-v-2c3a555c]:after {
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-    border: solid #8518c3;
-    border-width: 0 1px 1px 0;
-    z-index: 3;
-}
-label[data-v-2c3a555c] {
-    height: 3.5vh;
-    left: 35%;
+    height: 64%;
 }
 /*table*/
 td, th {
@@ -501,7 +452,7 @@ td, th {
     margin: 0;
     position: relative;
 }
-#custom-game-area[data-v-5b840ce8] {
+#custom-game-area[data-v-7fa67ee2] {
     display: grid;
     grid-gap: 5%;
     grid-template-columns: repeat(3, 1fr);
@@ -565,17 +516,16 @@ td, th {
 #navbar-middle > button:nth-of-type(3) {
     background-color: #4f1158 !important
 }
-h2[data-v-6f705b54] {
+h2[data-v-417e0dbe] {
     overflow: visible;
     max-height: 6%;
-    margin: 1%;
 }
-#decks-buttons[data-v-6f705b54] {
+#decks-buttons[data-v-417e0dbe] {
     overflow: visible;
     max-height: 15%;
     margin-bottom : 1%;
 }
-#decks-buttons button, button[data-v-6f705b54], .fake-button[data-v-6f705b54] {
+#decks-buttons button, button[data-v-417e0dbe], .fake-button[data-v-417e0dbe] {
     text-align: center;
     box-sizing: border-box;
     width: 24%;
@@ -588,7 +538,7 @@ h2[data-v-6f705b54] {
     position: absolute;
     bottom: 2%;
 }
-table[data-v-6f705b54] {
+table[data-v-417e0dbe] {
     width: 99%;
     table-layout: fixed;
 }
@@ -613,7 +563,7 @@ td {
 #navbar-middle > button:nth-of-type(4) {
     background-color: #4f1158 !important
 }
-.remove-custom-button[data-v-7d3c70a7], .fake-button[data-v-7d3c70a7] {
+.remove-custom-button[data-v-402aeb34], .fake-button[data-v-402aeb34] {
     text-align: center;
     line-height: 1;
     box-sizing: border-box;
@@ -769,14 +719,14 @@ body {
 #rs-ext-banlist, .engine-button {
     border: 1px solid
 }
-#rs-ext-banlist, .engine-button-navbar {
+#rs-ext-banlist, #editor-menu-title:nth-of-type(3), #editor-select-cardpool, .engine-button-navbar {
     font-size: 1.2vw;
     color: white;
     height: 4vh;
     float: left;
     margin: 2vh 0 0 .5vh;
 }
-#rs-ext-banlist, .engine-button-default {
+#rs-ext-banlist, #editor-select-cardpool, .engine-button-default {
     background-color: #111925
 }
 .engine-button-primary {
@@ -799,7 +749,7 @@ body {
     padding: 0;
     left: 0;
 }
-#editor-menu-title {
+#editor-menu-title:first-of-type {
     line-height: 3.5;
     text-align: right;
     word-wrap: break-word;
@@ -907,7 +857,7 @@ body {
     height: 100vh;
     position: relative;
 }
-form[data-v-9bfe76b0], form[data-v-4068c77b], form input[type="checkbox"] {
+form[data-v-26bcedb3]/*Login form*/, form[data-v-4068c77b]/*Register form*/, form input[type="checkbox"] {
     margin: 0;
     padding: 0;
 }
@@ -976,7 +926,7 @@ article button, form div {
     background-color: rgba(0, 0, 0, 0);
     border: 0;
 }
-#login-area[data-v-9bfe76b0], #register-area[data-v-4068c77b], #recover-area[data-v-8098b0b4] {
+#login-area[data-v-26bcedb3], #register-area[data-v-e589858c], #recover-area[data-v-29814b14] {
     background-color: rgba(0, 0, 0, 0);
     border-width: 0;
 }
@@ -1017,7 +967,6 @@ form div {
     position: absolute;
     top: 0;
 }
-
 }
 
 @-moz-document domain("duelingnexus.com") {
@@ -1033,7 +982,7 @@ form div {
     bottom: 0;
     left: 25%;
 }
-#navbar, #login-area[data-v-9bfe76b0], #register-area[data-v-4068c77b], #recover-area[data-v-8098b0b4] {
+#navbar, #login-area[data-v-26bcedb3], #register-area[data-v-e589858c], #recover-area[data-v-29814b14] {
     max-height: 100vh;
     width: 25%;
     position: fixed;
@@ -1106,7 +1055,7 @@ a, label, #login-area p, #register-area p, #recover-area p {
     bottom: 0;
     left: 20%;
 }
-#navbar, #login-area[data-v-9bfe76b0], #register-area[data-v-4068c77b], #recover-area[data-v-8098b0b4] {
+#navbar, #login-area[data-v-26bcedb3], #register-area[data-v-e589858c], #recover-area[data-v-29814b14] {
     max-height: 100vh;
     width: 20%;
     position: fixed;
@@ -1184,7 +1133,7 @@ body {
 article {
     z-index: 1
 }
-#login-area[data-v-9bfe76b0], #register-area[data-v-4068c77b], #recover-area[data-v-8098b0b4], #navbar, #navbar-left {
+#login-area[data-v-26bcedb3], #register-area[data-v-e589858c], #recover-area[data-v-29814b14], #navbar, #navbar-left {
     width: 100vw;
     z-index: 2;
     position: fixed;
@@ -1249,12 +1198,12 @@ article {
 }
 
 @-moz-document url-prefix("https://duelingnexus.com/login"), url-prefix("https://duelingnexus.com/register"), url-prefix("https://duelingnexus.com/recover") {
-/*SECTION 15 LOGIN*/
+/*SECTION 15 LOGINANIMATION*/
 /*This affects the navbar area while logged out. This smooths out the login animation.*/
 #navbar-middle button, #navbar-right {
     display: none
 }
-#links-area[data-v-9bfe76b0], #links-area[data-v-4068c77b], #links-area[data-v-8098b0b4] {
+#links-area[data-v-26bcedb3]/*login*/, #links-area[data-v-e589858c]/*register*/, #links-area[data-v-29814b14]/*recover*/ {
     border-top: 0;
     margin: 0;
     padding: 0;
@@ -1265,94 +1214,108 @@ form button {
 }
 }
 
-@-moz-document url("https://duelingnexus.com/login") {
+@-moz-document url("https://duelingnexus.com/login"), url("https://duelingnexus.com/gamelist") {
 /*SECTION 16 CHECKBOX*/
-/*This is the custom CSS checkbox on the login page.*/
-form input[type="checkbox"] {
-    margin: 0
-}
-#login-area[data-v-9bfe76b0] .input-checkbox-group {
-    text-align: left;
-    text-indent: 6vh;
-    width: 90%;
-    position: relative;
-    left: 10%;
-}
-#login-area[data-v-9bfe76b0] .input-checkbox-group input {
-    opacity: 0;
+/*This is the custom CSS checkboxes on the login and gamelist pages.*/
+/*All checkboxes*/
+.input-checkbox-group, #gamelist-filters p:nth-of-type(2) {
     z-index: 1;
-    float: right;
+    position: relative;
 }
-#login-area[data-v-9bfe76b0] .input-checkbox-group label:before {
+#login-remember, #hide-started-games {
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    vertical-align: middle;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+#login-area[data-v-26bcedb3] .input-checkbox-group label, label[data-v-33d70790]:hover {
+    user-select: none
+}
+#login-area[data-v-26bcedb3] .input-checkbox-group label:hover:before, label[data-v-33d70790]:hover:before {
+    border-color: #8518c3
+}
+#login-area[data-v-26bcedb3] .input-checkbox-group label:before, label[data-v-33d70790]:before {
     content: " ";
     background-color: #111925;
     border: 1px solid #595e67;
+    float: left;
     z-index: 2;
-    display: block;
-    position: fixed;
-}
-#login-area[data-v-9bfe76b0] .input-checkbox-group label:hover:before {
-    border-color: #8518c3
-}
-label[data-v-9bfe76b0]:after {
-    content: " ";
     position: absolute;
-    display: none;
+    left: 2%;
 }
-.input-checkbox-group input:checked ~ label[data-v-9bfe76b0]:after {
-    display: block
-}
-.input-checkbox-group label[data-v-9bfe76b0]:after {
+.input-checkbox-group label[data-v-26bcedb3]:after, label[data-v-33d70790]:after {
+    content: " ";
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
     border: solid #8518c3;
-    border-width: 0 1px 1px 0;
+    height: 1.5vh;
+    width: .75vh;
     z-index: 3;
+    display: none;
+    position: absolute;
+}
+.input-checkbox-group input:checked ~ label[data-v-26bcedb3]:after, input:checked ~ label[data-v-33d70790]:after {
+    display: block
+}
+/*Login checkbox*/
+
+.input-checkbox-group {
+    height: 2.5vw;
+    width: 80%;
+    margin: 0 0 3vh 0;
+    left: 10%;
+}
+#login-area[data-v-26bcedb3] .input-checkbox-group label {
+    padding: 8% 0 0 8%
+}
+#login-area[data-v-26bcedb3] .input-checkbox-group label:before {
+    margin: 0
+}
+.input-checkbox-group label[data-v-26bcedb3]:after {
+    top: 15%;
+    left: 4.75%;
+}
+/*Gamelist checkbox*/
+input[data-v-33d70790][type="text"] {
+    height: 3.25vh;
+    width: 26%;
+    padding: 0;
+    z-index: 2;
+    position: relative;
+}
+label[data-v-33d70790] {
+    padding: .5% 5%;
+    position: relative;
+}
+label[data-v-33d70790]:before {
+    margin: 1%
+}
+label[data-v-33d70790]:after {
+    top: 15.75%;
+    left: 6.25%;
 }
 
 @media (min-height: 500px) and (orientation: landscape) {
-label[data-v-9bfe76b0]:before {
+.input-checkbox-group label[data-v-26bcedb3]:after, label[data-v-33d70790]:after {
+    border-width: 0 3px 3px 0
+}
+label[data-v-26bcedb3]:before, label[data-v-33d70790]:before {
+    height: 55%;
+    padding-left: 8%;
+}
+label[data-v-33d70790]:before {
     height: 2.75vh;
-    width: 2.75vh;
-    margin-left: .5vw;
+    padding-left: 2.75vh;
 }
-.input-checkbox-group label[data-v-9bfe76b0]:after {
-    height: 1.5vh;
-    width: .75vh;
-    top: 1vh;
-    left: 5.25%;
-}
-
-}
-@media (max-height: 500px) {
-label[data-v-9bfe76b0]:before {
-    height: 2vh;
-    width: 2vh;
-    margin-left: .5%;
-}
-.input-checkbox-group label[data-v-9bfe76b0]:after {
-    height: 1.5vh;
-    width: .75vh;
-    top: 1vh;
-    left: 3.5%;
 }
 }
 
-@media (orientation: portrait) {
-label:before {
-    height: 2.5vh;
-    width: 2.5vh;
-    margin-left: .5vw;
-}
-.input-checkbox-group label:after {
-    height: 1.5vh;
-    width: .75vh;
-    top: 1.25vw;
-    left: 2.1%;
-}
-}
-}
 /*
 Patch Notes
 v1.4: improved the navbar.
