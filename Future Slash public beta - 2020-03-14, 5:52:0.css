@@ -437,58 +437,6 @@ hr:nth-of-type(5) {
     overflow-x: hidden;
     height: 64%;
 }
-/*custom checkbox*/
-input[type="checkbox"] {
-    margin: 0
-}
-input[data-v-33d70790][type="text"] {
-    height: 3.25vh;
-    width: 26%;
-    padding: 0;
-}
-label[data-v-33d70790] {
-    line-height: 3.5vh;
-    position: absolute;
-}
-#hide-started-games {
-    opacity: 0;
-    float: right;
-}
-label[data-v-33d70790]:before {
-    content: " ";
-    background-color: #111925;
-    border: 1px solid #595e67;
-    height: 2.75vh;
-    width: 2.75vh;
-    display: block;
-    z-index: 2;
-    position: absolute;
-    top: 0;
-    left: -25%;
-}
-label[data-v-33d70790]:hover:before {
-    border-color: #8518c3
-}
-label[data-v-33d70790]:after {
-    content: " ";
-    height: 1.5vh;
-    width: .75vh;
-    position: absolute;
-    display: none;
-    top: 10%;
-    left: -19.5%;
-}
-input:checked ~ label[data-v-33d70790]:after {
-    display: block
-}
-label[data-v-33d70790]:after {
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-    border: solid #8518c3;
-    border-width: 0 3px 3px 0;
-    z-index: 3;
-}
 /*table*/
 td, th {
     font-size: 2.25vh;
@@ -1270,118 +1218,100 @@ form button {
 /*SECTION 16 CHECKBOX*/
 /*This is the custom CSS checkboxes on the login and gamelist pages.*/
 /*All checkboxes*/
-input[type="checkbox"] {
-    margin: 0
-}
-#login-area[data-v-26bcedb3] .input-checkbox-group input, #hide-started-games {
-    opacity: 0;
+.input-checkbox-group, #gamelist-filters p:nth-of-type(2) {
     z-index: 1;
-    float: right;
+    position: relative;
+}
+#login-remember, #hide-started-games {
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    vertical-align: middle;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+#login-area[data-v-26bcedb3] .input-checkbox-group label, label[data-v-33d70790]:hover {
+    user-select: none
+}
+#login-area[data-v-26bcedb3] .input-checkbox-group label:hover:before, label[data-v-33d70790]:hover:before {
+    border-color: #8518c3
 }
 #login-area[data-v-26bcedb3] .input-checkbox-group label:before, label[data-v-33d70790]:before {
     content: " ";
     background-color: #111925;
     border: 1px solid #595e67;
-    display: block;
+    float: left;
     z-index: 2;
-}
-#login-area[data-v-26bcedb3] .input-checkbox-group label:hover:before, label[data-v-33d70790]:hover:before {
-    border-color: #8518c3;
-    height: 1.5vh;
-    width: .75vh;
-}
-label[data-v-26bcedb3]:after, label[data-v-33d70790]:after {
-    content: " ";
     position: absolute;
-    display: none;
-}
-.input-checkbox-group input:checked ~ label[data-v-26bcedb3]:after, input:checked ~ label[data-v-33d70790]:after {
-    display: block
+    left: 2%;
 }
 .input-checkbox-group label[data-v-26bcedb3]:after, label[data-v-33d70790]:after {
+    content: " ";
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
     border: solid #8518c3;
+    height: 1.5vh;
+    width: .75vh;
     z-index: 3;
+    display: none;
+    position: absolute;
+}
+.input-checkbox-group input:checked ~ label[data-v-26bcedb3]:after, input:checked ~ label[data-v-33d70790]:after {
+    display: block
 }
 /*Login checkbox*/
-#login-area[data-v-26bcedb3] .input-checkbox-group {
-    text-align: left;
-    text-indent: 6vh;
-    width: 90%;
-    position: relative;
+
+.input-checkbox-group {
+    height: 2.5vw;
+    width: 80%;
+    margin: 0 0 3vh 0;
     left: 10%;
 }
+#login-area[data-v-26bcedb3] .input-checkbox-group label {
+    padding: 8% 0 0 8%
+}
 #login-area[data-v-26bcedb3] .input-checkbox-group label:before {
-    position: fixed
+    margin: 0
 }
-label[data-v-26bcedb3]:before {
-    margin-left: .5vw
+.input-checkbox-group label[data-v-26bcedb3]:after {
+    top: 15%;
+    left: 4.75%;
 }
-/*gamelist checkbox*/
+/*Gamelist checkbox*/
 input[data-v-33d70790][type="text"] {
     height: 3.25vh;
     width: 26%;
     padding: 0;
+    z-index: 2;
+    position: relative;
 }
 label[data-v-33d70790] {
-    line-height: 3.5vh;
-    height: 3.5vh;
-    position: absolute;
-    left: 35%;
+    padding: .5% 5%;
+    position: relative;
 }
 label[data-v-33d70790]:before {
-    position: absolute;
-    top: 0;
-    left: -25%;
+    margin: 1%
 }
+label[data-v-33d70790]:after {
+    top: 15.75%;
+    left: 6.25%;
+}
+
 @media (min-height: 500px) and (orientation: landscape) {
-label[data-v-26bcedb3]:before, label[data-v-33d70790]:before {
-    height: 2.75vh;
-    width: 2.75vh;
-}
 .input-checkbox-group label[data-v-26bcedb3]:after, label[data-v-33d70790]:after {
     border-width: 0 3px 3px 0
 }
-.input-checkbox-group label[data-v-26bcedb3]:after {
-    top: .9vh;
-    left: 5.1%;
-}
-label[data-v-33d70790]:after {
-    top: 10%;
-    left: -19.5%;
-}
-}
-@media (max-height: 500px) and (orientation: landscape) {
 label[data-v-26bcedb3]:before, label[data-v-33d70790]:before {
-    height: 2vh;
-    width: 2vh;
+    height: 55%;
+    padding-left: 8%;
 }
-.input-checkbox-group label[data-v-26bcedb3]:after, label[data-v-33d70790]:after {
-    border-width: 0 2px 2px 0
-}
-.input-checkbox-group label[data-v-26bcedb3]:after {
-    top: 5%;
-    left: 5%;
-}
-label[data-v-33d70790]:after {
-    top: 1%;
-    left: -22%;
-}
-}
-@media (orientation: portrait) {
-label[data-v-26bcedb3]:before {
-    height: 2.5vh;
-    width: 2.5vh;
-    margin-left: .5vw
-}
-.input-checkbox-group label[data-v-26bcedb3]:after {
-    border-width: 0 6px 6px 0;
-    height: 1.5vh;
-    width: .75vh;
-    top: 1.25vw;
-    left: 2.2%;
+label[data-v-33d70790]:before {
+    height: 2.75vh;
+    padding-left: 2.75vh;
 }
 }
 }
