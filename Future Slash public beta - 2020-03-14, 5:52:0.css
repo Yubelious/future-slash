@@ -196,7 +196,7 @@ li {
     padding: 0;
     position: absolute;
 }
-div#app:before {
+#news-area:before, div#app:before {
     content: ' ';
     background: url('https://cdn.discordapp.com/attachments/670405796747673620/754166777587564655/Logo_Full.png') no-repeat center;
     background-size: auto 100%;
