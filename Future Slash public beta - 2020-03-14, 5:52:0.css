@@ -1250,6 +1250,7 @@ form button {
 }
 #login-area[data-v-26bcedb3] .input-checkbox-group label:after, label[data-v-33d70790]:after {
     content: " ";
+
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
@@ -1291,6 +1292,10 @@ label[data-v-33d70790] {
 label[data-v-33d70790]:before {
     margin: 1%
 }
+.input-checkbox-group input:checked ~ label[data-v-26bcedb3]:after, input:checked ~ label[data-v-33d70790]:after {
+    display: block
+}
+/*Login checkbox*/
 
 @media (min-height: 500px) and (orientation: landscape) {
 #login-area[data-v-26bcedb3] .input-checkbox-group label:before {
@@ -1330,6 +1335,16 @@ label[data-v-33d70790]:after {
     top: 9%;
     left: 6%;
 }
+label[data-v-33d70790] {
+    padding: .5% 5%;
+    position: relative;
+}
+label[data-v-33d70790]:before {
+    margin: 1%
+}
+label[data-v-33d70790]:after {
+    top: 15.75%;
+    left: 6.25%;
 }
 
 @media (orientation: portrait) {
