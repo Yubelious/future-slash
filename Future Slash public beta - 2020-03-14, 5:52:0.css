@@ -1,5 +1,5 @@
 /* ==UserStyle==
-@name           Future Slash public beta - ?
+@name           Future Slash public beta - 09/15/2020
 @namespace      github.com/openstyles/stylus
 @version        1.5.0
 @description    This isn't just a theme. It is the future of Dueling Nexus. Please test this beta and provide any feedback that you can by DMing #Yubelious!#5584 on Discord. If you have any issues figuring out how to test this CSS, please ask in #extensions-support on the official forum.
@@ -1236,9 +1236,6 @@ form button {
 #login-area[data-v-26bcedb3] .input-checkbox-group label, label[data-v-33d70790]:hover {
     user-select: none
 }
-#login-area[data-v-26bcedb3] .input-checkbox-group label:hover:before, label[data-v-33d70790]:hover:before {
-    border-color: #8518c3
-}
 #login-area[data-v-26bcedb3] .input-checkbox-group label:before, label[data-v-33d70790]:before {
     content: " ";
     background-color: #111925;
@@ -1248,8 +1245,12 @@ form button {
     position: absolute;
     left: 2%;
 }
-.input-checkbox-group label[data-v-26bcedb3]:after, label[data-v-33d70790]:after {
+#login-area[data-v-26bcedb3] .input-checkbox-group label:hover:before, label[data-v-33d70790]:hover:before {
+    border-color: #8518c3
+}
+#login-area[data-v-26bcedb3] .input-checkbox-group label:after, label[data-v-33d70790]:after {
     content: " ";
+
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
@@ -1264,7 +1265,6 @@ form button {
     display: block
 }
 /*Login checkbox*/
-
 .input-checkbox-group {
     height: 2.5vw;
     width: 80%;
@@ -1276,10 +1276,6 @@ form button {
 }
 #login-area[data-v-26bcedb3] .input-checkbox-group label:before {
     margin: 0
-}
-.input-checkbox-group label[data-v-26bcedb3]:after {
-    top: 15%;
-    left: 4.75%;
 }
 /*Gamelist checkbox*/
 input[data-v-33d70790][type="text"] {
@@ -1296,16 +1292,13 @@ label[data-v-33d70790] {
 label[data-v-33d70790]:before {
     margin: 1%
 }
-label[data-v-33d70790]:after {
-    top: 15.75%;
-    left: 6.25%;
+.input-checkbox-group input:checked ~ label[data-v-26bcedb3]:after, input:checked ~ label[data-v-33d70790]:after {
+    display: block
 }
+/*Login checkbox*/
 
 @media (min-height: 500px) and (orientation: landscape) {
-.input-checkbox-group label[data-v-26bcedb3]:after, label[data-v-33d70790]:after {
-    border-width: 0 3px 3px 0
-}
-label[data-v-26bcedb3]:before, label[data-v-33d70790]:before {
+#login-area[data-v-26bcedb3] .input-checkbox-group label:before {
     height: 55%;
     padding-left: 8%;
 }
@@ -1313,11 +1306,63 @@ label[data-v-33d70790]:before {
     height: 2.75vh;
     padding-left: 2.75vh;
 }
+#login-area[data-v-26bcedb3] .input-checkbox-group label:after, label[data-v-33d70790]:after {
+    border-width: 0 3px 3px 0
+}
+#login-area[data-v-26bcedb3] .input-checkbox-group label:after {
+    top: 15%;
+    left: 4.75%;
+}
+label[data-v-33d70790]:after {
+    top: 15.75%;
+    left: 6.25%;
+}
+}
+
+@media (max-height: 500px) and (orientation: landscape) {
+#login-area[data-v-26bcedb3] .input-checkbox-group label:before, label[data-v-33d70790]:before {
+    height: 2.5vh;
+    padding-left: 2.5vh;
+}
+#login-area[data-v-26bcedb3] .input-checkbox-group label:after, label[data-v-33d70790]:after {
+    border-width: 0 2px 2px 0
+}
+#login-area[data-v-26bcedb3] .input-checkbox-group label:after {
+    top: 15%;
+    left: 4.5%;
+}
+label[data-v-33d70790]:after {
+    top: 9%;
+    left: 6%;
+}
+label[data-v-33d70790] {
+    padding: .5% 5%;
+    position: relative;
+}
+label[data-v-33d70790]:before {
+    margin: 1%
+}
+label[data-v-33d70790]:after {
+    top: 15.75%;
+    left: 6.25%;
+}
+
+@media (orientation: portrait) {
+#login-area[data-v-26bcedb3] .input-checkbox-group label:before {
+    height: 4vw;
+    width: 4vw;
+}
+#login-area[data-v-26bcedb3] .input-checkbox-group label:after {
+    border-width: 0 6px 6px 0;
+    top: 30%;
+    left: 3.5%;
+}
 }
 }
 
 /*
 Patch Notes
+v1.5: Fixed whatever the update broke, moved the region-select to the top of its box, updated the deck creation page, globalized the header code, and made the checkbox look more like a checkbox.
 v1.4: improved the navbar.
 v1.3: Prepared the css for the colapsing navbar and the language select, worked more on the editor page, moved some stuff around, removed the background colour from input:hover, and set the borders to 1px.
 v1.2: Rewrote the Duel Zone article, added borders to buttons, added a custom checkbox to the gamelist filters, added a scrollbar to the gamelist, wrote a grid for the custom game creator, added scrolling to decks list, shaped fake buttons, and redid the login animation so it works when clicking that stupid home button from anywhere.
