@@ -1236,9 +1236,6 @@ form button {
 #login-area[data-v-26bcedb3] .input-checkbox-group label, label[data-v-33d70790]:hover {
     user-select: none
 }
-#login-area[data-v-26bcedb3] .input-checkbox-group label:hover:before, label[data-v-33d70790]:hover:before {
-    border-color: #8518c3
-}
 #login-area[data-v-26bcedb3] .input-checkbox-group label:before, label[data-v-33d70790]:before {
     content: " ";
     background-color: #111925;
@@ -1248,7 +1245,10 @@ form button {
     position: absolute;
     left: 2%;
 }
-.input-checkbox-group label[data-v-26bcedb3]:after, label[data-v-33d70790]:after {
+#login-area[data-v-26bcedb3] .input-checkbox-group label:hover:before, label[data-v-33d70790]:hover:before {
+    border-color: #8518c3
+}
+#login-area[data-v-26bcedb3] .input-checkbox-group label:after, label[data-v-33d70790]:after {
     content: " ";
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
@@ -1264,7 +1264,6 @@ form button {
     display: block
 }
 /*Login checkbox*/
-
 .input-checkbox-group {
     height: 2.5vw;
     width: 80%;
@@ -1276,10 +1275,6 @@ form button {
 }
 #login-area[data-v-26bcedb3] .input-checkbox-group label:before {
     margin: 0
-}
-.input-checkbox-group label[data-v-26bcedb3]:after {
-    top: 15%;
-    left: 4.75%;
 }
 /*Gamelist checkbox*/
 input[data-v-33d70790][type="text"] {
@@ -1296,22 +1291,56 @@ label[data-v-33d70790] {
 label[data-v-33d70790]:before {
     margin: 1%
 }
-label[data-v-33d70790]:after {
-    top: 15.75%;
-    left: 6.25%;
-}
 
 @media (min-height: 500px) and (orientation: landscape) {
-.input-checkbox-group label[data-v-26bcedb3]:after, label[data-v-33d70790]:after {
-    border-width: 0 3px 3px 0
-}
-label[data-v-26bcedb3]:before, label[data-v-33d70790]:before {
+#login-area[data-v-26bcedb3] .input-checkbox-group label:before {
     height: 55%;
     padding-left: 8%;
 }
 label[data-v-33d70790]:before {
     height: 2.75vh;
     padding-left: 2.75vh;
+}
+#login-area[data-v-26bcedb3] .input-checkbox-group label:after, label[data-v-33d70790]:after {
+    border-width: 0 3px 3px 0
+}
+#login-area[data-v-26bcedb3] .input-checkbox-group label:after {
+    top: 15%;
+    left: 4.75%;
+}
+label[data-v-33d70790]:after {
+    top: 15.75%;
+    left: 6.25%;
+}
+}
+
+@media (max-height: 500px) and (orientation: landscape) {
+#login-area[data-v-26bcedb3] .input-checkbox-group label:before, label[data-v-33d70790]:before {
+    height: 2.5vh;
+    padding-left: 2.5vh;
+}
+#login-area[data-v-26bcedb3] .input-checkbox-group label:after, label[data-v-33d70790]:after {
+    border-width: 0 2px 2px 0
+}
+#login-area[data-v-26bcedb3] .input-checkbox-group label:after {
+    top: 15%;
+    left: 4.5%;
+}
+label[data-v-33d70790]:after {
+    top: 9%;
+    left: 6%;
+}
+}
+
+@media (orientation: portrait) {
+#login-area[data-v-26bcedb3] .input-checkbox-group label:before {
+    height: 4vw;
+    width: 4vw;
+}
+#login-area[data-v-26bcedb3] .input-checkbox-group label:after {
+    border-width: 0 6px 6px 0;
+    top: 30%;
+    left: 3.5%;
 }
 }
 }
